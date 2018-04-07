@@ -1,0 +1,25 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hishinuma616/icotto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hishinuma616/icotto/issues"
+  },
+  "homepage": "https://github.com/hishinuma616/icotto#readme",
+  "devDependencies": {
+    "auto-prefixer": "^0.4.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.0"
+  }
+}

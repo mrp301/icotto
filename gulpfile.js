@@ -6,5 +6,5 @@ gulp.task('sass', function(){
   gulp.src('./css/scss/*.scss')
   .pipe(sass())
   .pipe(autoprefixer())
-  .pipe(gulp.dest('./css/css'));
+  .pipe(gulp.dest('./css/css/'));
 });
