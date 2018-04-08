@@ -7,11 +7,14 @@ $other-text: #999;
 $border-color: #e5e5e5;
 $back-color: #ebebeb;
 
-.clearfix::after {
-  display: block;
-  content: '';
-  clear: both;
+
+%icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
 }
+
 
 .l-left {
   float: left;
@@ -21,9 +24,8 @@ $back-color: #ebebeb;
   float: right;
 }
 
-%icon {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #fff;
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
 }
