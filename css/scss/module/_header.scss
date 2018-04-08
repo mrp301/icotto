@@ -1,0 +1,51 @@
+.header {
+  height: 48px;
+  width: 100%;
+  background-color: $main-color;
+
+  .header-icon-container {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .header-menu {
+
+    &::after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f0c9';
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
+
+  .header-logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 30px);
+
+    img {
+      height: 24px;
+    }
+  }
+
+  .header-history {
+
+    &::after {
+      @extend %icon;
+      content: '\f1da';
+    }
+  }
+
+  .header-search {
+
+    &::after {
+      @extend %icon;
+      content: '\f002';
+    }
+  }
+}

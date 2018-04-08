@@ -1,0 +1,29 @@
+$main-color: #ff6726;
+
+$main-text: #333;
+$sub-text: #666;
+$other-text: #999;
+
+$border-color: #e5e5e5;
+$back-color: #ebebeb;
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+%icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}

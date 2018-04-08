@@ -1,10 +1,73 @@
-body, h1, h2, h3, h4, ul, ol, li, p {
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+p {
   margin: 0;
   padding: 0; }
 
-ul, ol {
+ul,
+ol {
   list-style: none; }
 
 a {
   text-decoration: none;
   color: inherit; }
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.l-left {
+  float: left; }
+
+.l-right {
+  float: right; }
+
+.header .header-history::after, .header .header-search::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff; }
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  .l-header .l-header-menu {
+    position: absolute;
+    left: 0; }
+
+.header {
+  height: 48px;
+  width: 100%;
+  background-color: #ff6726; }
+  .header .header-icon-container {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center; }
+  .header .header-menu::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0c9';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff; }
+  .header .header-logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 30px); }
+    .header .header-logo img {
+      height: 24px; }
+  .header .header-history::after {
+    content: '\f1da'; }
+  .header .header-search::after {
+    content: '\f002'; }

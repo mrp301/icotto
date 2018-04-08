@@ -1,0 +1,11 @@
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  .l-header-menu {
+    position: absolute;
+    left: 0;
+  }
+}
