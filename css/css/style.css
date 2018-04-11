@@ -18,10 +18,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.clearfix::after {
-  display: block;
-  content: '';
-  clear: both; }
+.header .header-history::after, .header .header-search::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff; }
 
 .l-left {
   float: left; }
@@ -29,11 +30,25 @@ a {
 .l-right {
   float: right; }
 
-.header .header-history::after, .header .header-search::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #fff; }
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.l-bottom-xlarge {
+  margin-bottom: 32px; }
+
+.l-bottom-large {
+  margin-bottom: 24px; }
+
+.l-bottom {
+  margin-bottom: 20px; }
+
+.l-bottom-small {
+  margin-bottom: 16px; }
+
+.img-full {
+  max-width: 100%; }
 
 .l-header {
   position: fixed;
@@ -71,3 +86,26 @@ a {
     content: '\f1da'; }
   .header .header-search::after {
     content: '\f002'; }
+
+.btn {
+  padding: 10px;
+  background-color: #ff6726;
+  color: #fff;
+  text-align: center; }
+
+.section-foundation {
+  margin: 0 12px; }
+  .section-foundation p {
+    font-size: .875rem;
+    color: #333; }
+
+.section-foundation-solid::after {
+  border-bottom: solid 1px #e5e5e5; }
+
+.top {
+  margin-top: 48px; }
+
+.heading-title {
+  color: #333;
+  font-size: 1.125rem;
+  border-bottom: solid 2px #333; }
