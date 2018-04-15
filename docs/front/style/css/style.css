@@ -164,11 +164,12 @@ html {
   -o-object-fit: cover;
      object-fit: cover; }
   .heading-main .heading-main-inner {
+    box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 16px 12px 4px;
-    max-width: 100%;
+    width: 100%;
     background: linear-gradient(180deg, transparent 0, rgba(41, 20, 5, 0.7)); }
     .heading-main .heading-main-inner .heading-main-title {
       color: #fff;
