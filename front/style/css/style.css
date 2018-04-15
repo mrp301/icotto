@@ -5,32 +5,42 @@
 html {
   font-size: 62.5%; }
 
-body {
+.contents {
+  font-size: 14px;
+  font-size: 1.4;
   line-height: 1.5;
-  color: #333; }
+  color: #333;
+  margin-top: 56px; }
 
 /*----------------------------------------
   font setting（1rem=10px）
 -----------------------------------------*/
 .text-xlarge {
-  font-size: 1.8rem;
-  font-size: 18px; }
+  font-size: 18px;
+  font-size: 1.8rem; }
 
 .text-large {
-  font-size: 1.6rem;
-  font-size: 16px; }
+  font-size: 16px;
+  font-size: 1.6rem; }
 
 .text-medium {
   font-size: 1.4rem;
   font-size: 14px; }
 
 .text-small {
-  font-size: 1.2rem;
-  font-size: 12px; }
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 .text-xsmall {
-  font-size: 1rem;
-  font-size: 10px; }
+  font-size: 10px;
+  font-size: 1rem; }
+
+/*----------------------------------------
+  text
+-----------------------------------------*/
+.note-text {
+  font-size: 11px;
+  font-size: 1.1rem; }
 
 /*----------------------------------------
   icon
@@ -56,19 +66,41 @@ body {
   clear: both; }
 
 .l-bottom-xlarge {
-  margin-bottom: 32px; }
+  margin-bottom: 32px !important; }
 
 .l-bottom-large {
-  margin-bottom: 24px; }
+  margin-bottom: 24px !important; }
 
 .l-bottom-midium {
-  margin-bottom: 20px; }
+  margin-bottom: 20px !important; }
 
 .l-bottom-small {
-  margin-bottom: 16px; }
+  margin-bottom: 16px !important; }
+
+.l-bottom-xsmall {
+  margin-bottom: 8px !important; }
 
 .full {
   max-width: 100% !important; }
+
+/*----------------------------------------
+  section-container
+-----------------------------------------*/
+.section-container-large, .section-container-medium, .section-container-small {
+  border-bottom: dotted 1px #e5e5e5;
+  margin-bottom: 32px; }
+
+.section-container-large {
+  padding: 0 16px; }
+
+.section-container-medium {
+  padding: 0 12px; }
+
+.section-container-small {
+  padding: 0 8px; }
+
+.solid-hide {
+  border: none; }
 
 .l-header {
   position: fixed;
@@ -146,15 +178,6 @@ body {
   background-color: #ebebeb;
   padding: 16px;
   font-size: 1.4rem; }
-
-.section-foundation {
-  padding: 0 12px; }
-  .section-foundation p {
-    font-size: 1.4rem; }
-
-.section-foundation-solid {
-  border-bottom: dashed 1px #e5e5e5;
-  margin-bottom: 32px; }
 
 .top {
   margin-top: 48px; }
