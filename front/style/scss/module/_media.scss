@@ -1,0 +1,23 @@
+.media {
+  display: flex;
+  border-bottom: solid 1px #f8f7f5;
+
+  .media-thumbnail-container {
+    height: 96px;
+
+   .media-thumbnail {
+     width: 96px;
+     height: 96px;
+   }
+  }
+
+  .media-body {
+    padding: 8px 8px 0 12px;
+
+    .media-title {
+      font-size: 0.875rem;
+      font-weight: bold;
+      line-height: 21px;
+    }
+  }
+}

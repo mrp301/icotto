@@ -7,6 +7,10 @@ $other-text: #999;
 $border-color: #e5e5e5;
 $back-color: #ebebeb;
 
+* {
+  color: $main-text;
+}
+
 
 %icon {
   font-family: "Font Awesome 5 Free";
@@ -46,6 +50,6 @@ $back-color: #ebebeb;
   margin-bottom: 16px;
 }
 
-.img-full {
-  max-width: 100%;
+.full {
+  max-width: 100%!important;
 }

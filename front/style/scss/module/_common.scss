@@ -1,0 +1,58 @@
+//見出し
+
+.heading-main {
+  color: #000;
+  padding-left: 12px;
+  font-weight: bold;
+}
+
+.heading-secondary {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 27px;
+  border-bottom: solid 2px #333;
+}
+
+.heading-tertiary {
+  position: relative;
+  padding-left: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.heading-tertiary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666;
+}
+
+.heading-aside {
+  background-color: $back-color;
+  padding: 16px;
+  font-size: 0.875rem;
+}
+
+.section-foundation {
+  padding: 0 12px;
+
+  p {
+    font-size: .875rem;
+    color: $main-text;
+    line-height: 21px;
+  }
+}
+
+.section-foundation-solid {
+  border-bottom: dashed 1px $border-color;
+  margin-bottom: 32px;
+}
+
+.top {
+  margin-top: 48px;
+}

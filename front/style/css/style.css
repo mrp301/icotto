@@ -1,22 +1,5 @@
-body,
-h1,
-h2,
-h3,
-h4,
-ul,
-ol,
-li,
-p {
-  margin: 0;
-  padding: 0; }
-
-ul,
-ol {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
+* {
+  color: #333; }
 
 .header .header-history::after, .header .header-search::after {
   font-family: "Font Awesome 5 Free";
@@ -47,8 +30,8 @@ a {
 .l-bottom-small {
   margin-bottom: 16px; }
 
-.img-full {
-  max-width: 100%; }
+.full {
+  max-width: 100% !important; }
 
 .l-header {
   position: fixed;
@@ -68,7 +51,8 @@ a {
     width: 48px;
     height: 48px;
     line-height: 48px;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
   .header .header-menu::after {
     font-family: 'Font Awesome 5 Free';
     content: '\f0c9';
@@ -93,19 +77,64 @@ a {
   color: #fff;
   text-align: center; }
 
+.heading-main {
+  color: #000;
+  padding-left: 12px;
+  font-weight: bold; }
+
+.heading-secondary {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 27px;
+  border-bottom: solid 2px #333; }
+
+.heading-tertiary {
+  position: relative;
+  padding-left: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 24px; }
+
+.heading-tertiary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666; }
+
+.heading-aside {
+  background-color: #ebebeb;
+  padding: 16px;
+  font-size: 0.875rem; }
+
 .section-foundation {
-  margin: 0 12px; }
+  padding: 0 12px; }
   .section-foundation p {
     font-size: .875rem;
-    color: #333; }
+    color: #333;
+    line-height: 21px; }
 
-.section-foundation-solid::after {
-  border-bottom: solid 1px #e5e5e5; }
+.section-foundation-solid {
+  border-bottom: dashed 1px #e5e5e5;
+  margin-bottom: 32px; }
 
 .top {
   margin-top: 48px; }
 
-.heading-title {
-  color: #333;
-  font-size: 1.125rem;
-  border-bottom: solid 2px #333; }
+.media {
+  display: flex;
+  border-bottom: solid 1px #f8f7f5; }
+  .media .media-thumbnail-container {
+    height: 96px; }
+    .media .media-thumbnail-container .media-thumbnail {
+      width: 96px;
+      height: 96px; }
+  .media .media-body {
+    padding: 8px 8px 0 12px; }
+    .media .media-body .media-title {
+      font-size: 0.875rem;
+      font-weight: bold;
+      line-height: 21px; }

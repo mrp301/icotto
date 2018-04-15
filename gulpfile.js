@@ -3,8 +3,8 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
-  gulp.src('./css/scss/*.scss')
+  gulp.src('front/style/scss/*.scss')
   .pipe(sass())
   .pipe(autoprefixer())
-  .pipe(gulp.dest('./css/css/'));
+  .pipe(gulp.dest('front/style/css/'));
 });
