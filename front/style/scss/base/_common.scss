@@ -1,3 +1,6 @@
+/*----------------------------------------
+  color
+-----------------------------------------*/
 $main-color: #ff6726;
 
 $main-text: #333;
@@ -7,10 +10,47 @@ $other-text: #999;
 $border-color: #e5e5e5;
 $back-color: #ebebeb;
 
-* {
+html {
+  //10pxに設定
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
   color: $main-text;
 }
 
+/*----------------------------------------
+  font setting（1rem=10px）
+-----------------------------------------*/
+.text-xlarge {
+  font-size: 1.8rem;
+  font-size: 18px;
+}
+
+.text-large {
+  font-size: 1.6rem;
+  font-size: 16px;
+}
+
+.text-medium {
+  font-size: 1.4rem;
+  font-size: 14px;
+}
+
+.text-small {
+  font-size: 1.2rem;
+  font-size: 12px;
+}
+
+.text-xsmall {
+  font-size: 1rem;
+  font-size: 10px;
+}
+
+/*----------------------------------------
+  icon
+-----------------------------------------*/
 
 %icon {
   font-family: "Font Awesome 5 Free";
@@ -19,6 +59,9 @@ $back-color: #ebebeb;
   color: #fff;
 }
 
+/*----------------------------------------
+  layout
+-----------------------------------------*/
 
 .l-left {
   float: left;
@@ -42,7 +85,7 @@ $back-color: #ebebeb;
   margin-bottom: 24px;
 }
 
-.l-bottom {
+.l-bottom-midium {
   margin-bottom: 20px;
 }
 

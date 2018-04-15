@@ -1,12 +1,49 @@
-* {
+@charset "UTF-8";
+/*----------------------------------------
+  color
+-----------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.5;
   color: #333; }
 
+/*----------------------------------------
+  font setting（1rem=10px）
+-----------------------------------------*/
+.text-xlarge {
+  font-size: 1.8rem;
+  font-size: 18px; }
+
+.text-large {
+  font-size: 1.6rem;
+  font-size: 16px; }
+
+.text-medium {
+  font-size: 1.4rem;
+  font-size: 14px; }
+
+.text-small {
+  font-size: 1.2rem;
+  font-size: 12px; }
+
+.text-xsmall {
+  font-size: 1rem;
+  font-size: 10px; }
+
+/*----------------------------------------
+  icon
+-----------------------------------------*/
 .header .header-history::after, .header .header-search::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff; }
 
+/*----------------------------------------
+  layout
+-----------------------------------------*/
 .l-left {
   float: left; }
 
@@ -24,7 +61,7 @@
 .l-bottom-large {
   margin-bottom: 24px; }
 
-.l-bottom {
+.l-bottom-midium {
   margin-bottom: 20px; }
 
 .l-bottom-small {
@@ -83,7 +120,7 @@
   font-weight: bold; }
 
 .heading-secondary {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 27px;
   border-bottom: solid 2px #333; }
@@ -91,7 +128,7 @@
 .heading-tertiary {
   position: relative;
   padding-left: 12px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 24px; }
 
@@ -108,14 +145,12 @@
 .heading-aside {
   background-color: #ebebeb;
   padding: 16px;
-  font-size: 0.875rem; }
+  font-size: 1.4rem; }
 
 .section-foundation {
   padding: 0 12px; }
   .section-foundation p {
-    font-size: .875rem;
-    color: #333;
-    line-height: 21px; }
+    font-size: 1.4rem; }
 
 .section-foundation-solid {
   border-bottom: dashed 1px #e5e5e5;
@@ -135,6 +170,6 @@
   .media .media-body {
     padding: 8px 8px 0 12px; }
     .media .media-body .media-title {
-      font-size: 0.875rem;
+      font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }

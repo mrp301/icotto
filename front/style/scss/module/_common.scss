@@ -7,7 +7,7 @@
 }
 
 .heading-secondary {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 27px;
   border-bottom: solid 2px #333;
@@ -16,7 +16,7 @@
 .heading-tertiary {
   position: relative;
   padding-left: 12px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 24px;
 }
@@ -35,16 +35,14 @@
 .heading-aside {
   background-color: $back-color;
   padding: 16px;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 .section-foundation {
   padding: 0 12px;
 
   p {
-    font-size: .875rem;
-    color: $main-text;
-    line-height: 21px;
+    font-size: 1.4rem;
   }
 }
 
