@@ -10,7 +10,8 @@ html {
   font-size: 1.4;
   line-height: 1.5;
   color: #333;
-  margin-top: 56px; }
+  margin: 56px auto 0;
+  max-width: 700px; }
 
 /*----------------------------------------
   font setting（1rem=10px）
@@ -91,7 +92,7 @@ html {
   text-align: right !important; }
 
 .full {
-  max-width: 100% !important; }
+  width: 100% !important; }
 
 /*----------------------------------------
   section-container
@@ -208,9 +209,6 @@ html {
   background-color: #ebebeb;
   padding: 16px;
   font-size: 1.4rem; }
-
-.top {
-  margin-top: 48px; }
 
 .media {
   display: flex;
