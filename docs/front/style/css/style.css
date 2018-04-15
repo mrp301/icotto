@@ -81,6 +81,15 @@ html {
 .l-bottom-xsmall {
   margin-bottom: 8px !important; }
 
+.l-align-center {
+  text-align: center !important; }
+
+.l-align-left {
+  text-align: left !important; }
+
+.l-align-right {
+  text-align: right !important; }
+
 .full {
   max-width: 100% !important; }
 
