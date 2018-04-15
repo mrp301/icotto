@@ -6,7 +6,7 @@
   max-width: 100%;
   height: 240px - 48px;
   background-image: url(../../../img/main-image.jpg);
-  background-size: 100% 240px;
+  background-size: cover;
   background-position: center;
 　background-repeat: no-repeat;
   object-fit: cover;
@@ -18,6 +18,7 @@
     left: 0;
     // layout
     padding: 16px 12px 4px;
+    width: 100%;
     background: linear-gradient(180deg,transparent 0,rgba(41, 20, 5, .7));
 
     .heading-main-title {
