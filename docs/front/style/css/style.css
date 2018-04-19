@@ -87,6 +87,9 @@ html {
 .l-bottom-xsmall {
   margin-bottom: 8px !important; }
 
+.l-bottom-xxsmall {
+  margin-bottom: 4px !important; }
+
 .l-align-center {
   text-align: center !important; }
 
@@ -115,7 +118,7 @@ html {
 .section-container-small {
   padding: 0 8px; }
 
-.solid-hide {
+.border-none {
   border: none; }
 
 .l-header {
@@ -157,6 +160,16 @@ html {
   background-color: #ff6726;
   color: #fff;
   text-align: center; }
+
+.clip-btn {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); }
 
 .heading-main {
   position: relative;
@@ -229,3 +242,19 @@ html {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }
+
+.writer {
+  display: table;
+  padding: 8px 12px; }
+  .writer .writer-icon {
+    display: table-cell;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%; }
+  .writer .writer-name {
+    display: table-cell;
+    vertical-align: middle;
+    color: #666;
+    font-size: 11px;
+    font-size: 1.1rem; }
