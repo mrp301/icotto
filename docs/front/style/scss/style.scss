@@ -3,12 +3,15 @@
 @import './base/_common';
 
 //layout
-@import './layout/_l-header';
+@import './layout/_header';
+@import './layout/_utility';
 
 //module
-@import './module/_header';
 @import './module/_btn';
-@import './module/_common';
+@import './module/_header';
 @import './module/_heading';
+@import './module/_icon';
 @import './module/_media';
+@import './module/_section-container';
+@import './module/_text';
 @import './module/_writer';

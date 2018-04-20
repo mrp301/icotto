@@ -1,9 +1,14 @@
 @charset "UTF-8";
-/*----------------------------------------
-  color
------------------------------------------*/
 html {
   font-size: 62.5%; }
+
+.contents {
+  font-size: 14px;
+  font-size: 1.4;
+  line-height: 1.5;
+  color: #333;
+  margin: 56px auto 0;
+  max-width: 700px; }
 
 .contents {
   font-size: 14px;
@@ -51,7 +56,7 @@ html {
 /*----------------------------------------
   icon
 -----------------------------------------*/
-.line-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before {
+.line-icon::before, .clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -63,9 +68,15 @@ html {
   content: '\f4b0';
   color: #00c300; }
 
-/*----------------------------------------
-  layout
------------------------------------------*/
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  .l-header .l-header-menu {
+    position: absolute;
+    left: 0; }
+
 .l-left {
   float: left; }
 
@@ -107,59 +118,6 @@ html {
 .full {
   width: 100% !important; }
 
-/*----------------------------------------
-  section-container
------------------------------------------*/
-.section-container-large, .section-container-medium, .section-container-small {
-  border-bottom: dotted 1px #e5e5e5;
-  margin-bottom: 32px; }
-
-.section-container-large {
-  padding: 0 16px; }
-
-.section-container-medium {
-  padding: 0 12px; }
-
-.section-container-small {
-  padding: 0 8px; }
-
-.section-container-border-none {
-  border: none; }
-
-.l-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2; }
-  .l-header .l-header-menu {
-    position: absolute;
-    left: 0; }
-
-.header {
-  height: 48px;
-  width: 100%;
-  background-color: #ff6726; }
-  .header .header-icon-container {
-    display: block;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    text-decoration: none; }
-  .header .header-menu::after {
-    content: '\f0c9'; }
-  .header .header-logo {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: calc(50% - 30px); }
-    .header .header-logo img {
-      height: 24px; }
-  .header .header-history::after {
-    content: '\f1da'; }
-  .header .header-search::after {
-    content: '\f002'; }
-
 .btn {
   padding: 10px;
   background-color: #ff6726;
@@ -182,6 +140,33 @@ html {
 .clip-icon::before {
   content: '\f0c6';
   color: #d0d0d0; }
+
+.header {
+  height: 48px;
+  width: 100%;
+  background-color: #ff6726; }
+  .header .header-icon-container {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none; }
+  .header .header-menu::after {
+    content: '\f0c9'; }
+  .header .header-logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 30px); }
+    .header .header-logo img {
+      height: 24px; }
+  .header .header-history::after {
+    color: #fff;
+    content: '\f1da'; }
+  .header .header-search::after {
+    color: #fff;
+    content: '\f002'; }
 
 .heading-main {
   position: relative;
@@ -240,6 +225,12 @@ html {
   padding: 16px;
   font-size: 1.4rem; }
 
+.line-icon::before, .clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 2rem; }
+
 .media {
   display: flex;
   border-bottom: solid 1px #f8f7f5; }
@@ -254,6 +245,51 @@ html {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }
+
+.section-container-large, .section-container-medium, .section-container-small {
+  border-bottom: dotted 1px #e5e5e5;
+  margin-bottom: 32px; }
+
+.section-container-large {
+  padding: 0 16px; }
+
+.section-container-medium {
+  padding: 0 12px; }
+
+.section-container-small {
+  padding: 0 8px; }
+
+.section-container-border-none {
+  border: none; }
+
+.text-xlarge {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.text-large {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.text-medium {
+  font-size: 1.4rem;
+  font-size: 14px; }
+
+.text-small {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.text-xsmall {
+  font-size: 10px;
+  font-size: 1rem; }
+
+.note-text {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+.description-text {
+  font-size: 1.3px;
+  font-size: 1.3rem;
+  color: #666; }
 
 .writer {
   display: table;

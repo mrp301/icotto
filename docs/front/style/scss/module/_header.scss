@@ -34,6 +34,7 @@
   .header-history {
 
     &::after {
+      color: #fff;
       @extend %icon;
       content: '\f1da';
     }
@@ -42,6 +43,7 @@
   .header-search {
 
     &::after {
+      color: #fff;
       @extend %icon;
       content: '\f002';
     }

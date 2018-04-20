@@ -1,0 +1,22 @@
+$main-color: #ff6726;
+
+$main-text: #333;
+$sub-text: #666;
+$other-text: #999;
+
+$border-color: #e5e5e5;
+$back-color: #ebebeb;
+
+html {
+  //10pxに設定
+  font-size: 62.5%;
+}
+
+.contents {
+  font-size: 14px;
+  font-size: 1.4;
+  line-height: 1.5;
+  color: $main-text;
+  margin: 56px auto 0;
+  max-width: 700px;
+}
