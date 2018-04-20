@@ -51,12 +51,17 @@ html {
 /*----------------------------------------
   icon
 -----------------------------------------*/
-.header .header-menu::after, .header .header-history::after, .header .header-search::after {
+.line-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
   font-size: 2rem;
   color: #fff; }
+
+.line-icon::before {
+  margin-right: 20px;
+  content: '\f4b0';
+  color: #00c300; }
 
 /*----------------------------------------
   layout
@@ -118,7 +123,7 @@ html {
 .section-container-small {
   padding: 0 8px; }
 
-.border-none {
+.section-container-border-none {
   border: none; }
 
 .l-header {
@@ -161,15 +166,22 @@ html {
   color: #fff;
   text-align: center; }
 
-.clip-btn {
+.circle-btn {
+  position: absolute;
+  right: 16px;
+  bottom: -32px;
   display: inline-block;
   width: 64px;
   height: 64px;
   text-align: center;
-  vertical-align: middle;
+  line-height: 64px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); }
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15); }
+
+.clip-icon::before {
+  content: '\f0c6';
+  color: #d0d0d0; }
 
 .heading-main {
   position: relative;

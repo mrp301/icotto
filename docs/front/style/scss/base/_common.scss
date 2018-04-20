@@ -79,6 +79,16 @@ html {
   color: #fff;
 }
 
+.line-icon {
+
+  &::before {
+    margin-right: 20px;
+    @extend %icon;
+    content: '\f4b0';
+    color: #00c300;
+  }
+}
+
 /*----------------------------------------
   layout
 -----------------------------------------*/
@@ -162,6 +172,6 @@ html {
   padding: 0 8px;
 }
 
-.border-none {
+.section-container-border-none {
   border: none;
 }
