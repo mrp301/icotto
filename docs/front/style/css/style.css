@@ -10,63 +10,11 @@ html {
   margin: 56px auto 0;
   max-width: 700px; }
 
-.contents {
-  font-size: 14px;
-  font-size: 1.4;
-  line-height: 1.5;
-  color: #333;
-  margin: 56px auto 0;
-  max-width: 700px; }
+a:link {
+  color: #333; }
 
-/*----------------------------------------
-  font setting（1rem=10px）
------------------------------------------*/
-.text-xlarge {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-.text-large {
-  font-size: 16px;
-  font-size: 1.6rem; }
-
-.text-medium {
-  font-size: 1.4rem;
-  font-size: 14px; }
-
-.text-small {
-  font-size: 12px;
-  font-size: 1.2rem; }
-
-.text-xsmall {
-  font-size: 10px;
-  font-size: 1rem; }
-
-/*----------------------------------------
-  text
------------------------------------------*/
-.note-text {
-  font-size: 11px;
-  font-size: 1.1rem; }
-
-.description-text {
-  font-size: 1.3px;
-  font-size: 1.3rem;
+a:visited {
   color: #666; }
-
-/*----------------------------------------
-  icon
------------------------------------------*/
-.line-icon::before, .clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 20px;
-  font-size: 2rem;
-  color: #fff; }
-
-.line-icon::before {
-  margin-right: 20px;
-  content: '\f4b0';
-  color: #00c300; }
 
 .l-header {
   position: fixed;
@@ -153,7 +101,8 @@ html {
     text-align: center;
     text-decoration: none; }
   .header .header-menu::after {
-    content: '\f0c9'; }
+    content: '\f0c9';
+    color: #fff; }
   .header .header-logo {
     display: block;
     position: absolute;
@@ -225,7 +174,7 @@ html {
   padding: 16px;
   font-size: 1.4rem; }
 
-.line-icon::before, .clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
+.clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -245,6 +194,39 @@ html {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }
+
+a.media {
+  text-decoration: none;
+  color: #333 !important; }
+
+.ranking-container {
+  position: relative; }
+  .ranking-container .rankig {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 34px 0 0;
+    border-color: transparent #ff6726 transparent transparent; }
+    .ranking-container .rankig .ranking-text {
+      position: absolute;
+      bottom: 0;
+      left: -5px;
+      width: 34px;
+      color: #fff;
+      font-size: 13px;
+      font-size: 1.3rem;
+      text-align: right; }
+  .ranking-container .ranking-first {
+    border-right-color: #c69b45; }
+  .ranking-container .ranking-second {
+    border-right-color: #a0a3a6; }
+  .ranking-container .ranking-third {
+    border-right-color: #b27f60; }
 
 .section-container-large, .section-container-medium, .section-container-small {
   border-bottom: dotted 1px #e5e5e5;

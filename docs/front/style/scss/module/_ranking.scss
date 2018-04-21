@@ -1,0 +1,40 @@
+.ranking-container {
+  position: relative;
+
+  .rankig {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 34px 0 0;
+    border-color: transparent $main-color transparent transparent;
+
+    .ranking-text {
+      position: absolute;
+      bottom: 0;
+      left: -5px;
+      width: 34px;
+      color: #fff;
+      font-size: 13px;
+      font-size: 1.3rem;
+      text-align: right;
+    }
+  }
+
+  .ranking-first {
+    border-right-color: #c69b45;
+  }
+
+  .ranking-second {
+    border-right-color: #a0a3a6;
+  }
+
+  .ranking-third {
+    border-right-color: #b27f60;
+  }
+
+}
