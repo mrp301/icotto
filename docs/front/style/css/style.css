@@ -10,11 +10,12 @@ html {
   margin: 56px auto 0;
   max-width: 700px; }
 
-a:link {
-  color: #333; }
-
-a:visited {
-  color: #666; }
+a {
+  font-size: 13px; }
+  a:link {
+    color: #333; }
+  a:visited {
+    color: #666; }
 
 .l-header {
   position: fixed;
@@ -173,6 +174,19 @@ a:visited {
   background-color: #ebebeb;
   padding: 16px;
   font-size: 1.4rem; }
+
+.heading-aside-ribon {
+  position: relative;
+  border-top: solid 2px #e84e65; }
+  .heading-aside-ribon .heading-aside-ribon-text {
+    position: absolute;
+    top: -2px;
+    right: 4px;
+    padding: 0 8px;
+    font-size: 10px;
+    color: #fff;
+    background-color: #e84e65;
+    border-radius: 0 0 2px 2px; }
 
 .clip-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after {
   font-family: "Font Awesome 5 Free";
