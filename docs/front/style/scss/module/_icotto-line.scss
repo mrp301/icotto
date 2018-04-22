@@ -1,0 +1,36 @@
+.icotto-line {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 0 200px;
+  text-align: center;
+  background-color: #f0e9e3;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #333;
+
+  .icotto-line-head {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .icotto-line-btn {
+    display: inline-block;
+    margin: 16px 0;
+    padding: 12px 10px;
+    color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    background-color: #00c300;
+  }
+
+  .icotto-line-img {
+    position: absolute;
+    right: 50%;
+    bottom: -58px;
+    transform: translateX(50%);
+    width: 200px;
+  }
+}

@@ -1,13 +1,45 @@
+//四角ボタン メインカラー
+//角丸ボタン 白ボタン
+//丸ボタン
+
 .btn {
+  position: relative;
   padding: 16px 0;
   text-align: center;
   background-color: $main-color;
   font-size: 16px;
   font-size: 1.6rem;
   color: #fff;
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    font-size: 28px!important;
+    color: #fff;
+  }
 }
 
-.circle-btn {
+.btn-plain {
+  padding: 11px 0;
+  text-align: center;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border: solid 1px #ebebeb;
+  border-radius: 4px;
+  box-shadow: 0 2px #ebebeb;
+
+  //アイコン用クラスを読み込んで、サイズを変更している。
+  //アイコン用のクラスだけ作ればplain、circleボタン共に対応できる
+  &::before {
+    font-size: 16px!important;
+    font-size: 1.6rem!important;
+    margin-right: 4px;
+    color: #d0d0d0;
+  }
+}
+
+.btn-circle {
   position: absolute;
   right: 16px;
   bottom: -32px;
@@ -19,10 +51,9 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
-}
 
-.clip-icon::before {
-  @extend %icon;
-  content: '\f0c6';
-  color: #d0d0d0;
+  //アイコンの色
+  &::before {
+    color: #d0d0d0;
+  }
 }

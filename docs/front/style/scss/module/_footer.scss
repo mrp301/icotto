@@ -1,5 +1,32 @@
 .footer {
 
+  .footer-heading {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 11px;
+    font-size: 1.1rem;
+    color: #666;
+    text-decoration: none;
+    background-color: #f8f7f5;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -9px;
+      right: 50%;
+      transform: translateX(18px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 18px 15px 18px;
+      border-color: transparent transparent #f8f7f5 transparent;
+
+    }
+  }
+
   .footer-nav-container {
     display: flex;
     flex-wrap: wrap;

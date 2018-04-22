@@ -5,3 +5,17 @@
   font-size: 20px;
   font-size: 2rem;
 }
+
+//----------------------------
+//アイコン定義
+//----------------------------/
+
+.clip-icon::before {
+  @extend %icon;
+  content: '\f0c6';
+}
+
+.allow-right-icon::after {
+  @extend %icon;
+  content: '\f105';
+}
