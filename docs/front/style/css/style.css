@@ -146,11 +146,12 @@ a {
   .footer .footer-nav-container .footer-nav, .footer .footer-nav-container .footer-nav-half {
     box-sizing: border-box;
     width: 100%;
-    padding: 19px 0;
     background-color: #e5e5e5;
     border-bottom: solid 1px #fff;
     text-align: center; }
     .footer .footer-nav-container .footer-nav .footer-nav-text, .footer .footer-nav-container .footer-nav-half .footer-nav-text {
+      display: block;
+      padding: 19px 0;
       font-size: 12px;
       font-size: 1.2rem;
       text-decoration: none; }
