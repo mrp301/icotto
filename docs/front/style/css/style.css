@@ -359,6 +359,29 @@ a.media {
   text-decoration: none;
   color: #333 !important; }
 
+.paganation {
+  display: flex;
+  box-sizing: border-box; }
+  .paganation .paganation-item, .paganation .paganation-item-select, .paganation .paganation-item-hide {
+    border: solid 1px #e5e5e5;
+    height: 48px;
+    width: 20%; }
+    .paganation .paganation-item .paganation-item-text, .paganation .paganation-item-select .paganation-item-text, .paganation .paganation-item-hide .paganation-item-text {
+      display: block;
+      text-align: center;
+      line-height: 48px;
+      color: #333;
+      font-size: 14px;
+      font-size: 1.4rem;
+      text-decoration: none; }
+  .paganation .paganation-item-select {
+    border: solid 1px #ff6726;
+    background-color: #ff6726; }
+    .paganation .paganation-item-select .paganation-item-text {
+      color: #fff; }
+  .paganation .paganation-item-hide {
+    border: none; }
+
 .ranking-container {
   position: relative; }
   .ranking-container .rankig {

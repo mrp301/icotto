@@ -1,0 +1,35 @@
+.paganation {
+  display: flex;
+  box-sizing: border-box;
+
+  .paganation-item {
+    border: solid 1px #e5e5e5;
+    height: 48px;
+    width: 20%;
+
+    .paganation-item-text {
+      display: block;
+      text-align: center;
+      line-height: 48px;
+      color: #333;
+      font-size: 14px;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+  }
+
+  .paganation-item-select {
+    @extend .paganation-item;
+    border: solid 1px $main-color;
+    background-color: $main-color;
+
+    .paganation-item-text {
+      color: #fff;
+    }
+  }
+
+  .paganation-item-hide {
+    @extend .paganation-item;
+    border: none;
+  }
+}
