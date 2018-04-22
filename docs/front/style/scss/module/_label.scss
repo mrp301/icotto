@@ -1,0 +1,40 @@
+.label {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 10px 7px;
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  box-shadow: 0 1px #ebebeb;
+
+  .label-text {
+    text-decoration: none;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  &::before {
+    @extend %icon;
+    content: '\f3c5';
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    margin-right: 6px;
+  }
+
+  &::after {
+    @extend %icon;
+    content: '\f0da';
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    margin-left: 6px;
+  }
+}
+
+.label-area {
+  background-color: #ebebeb;
+  box-shadow: 0 2px #d2d2d2;
+
+  &::before {
+    content: '\f02b';
+  }
+}

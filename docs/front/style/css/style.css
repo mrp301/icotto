@@ -261,7 +261,7 @@ a {
     background-color: #e84e65;
     border-radius: 0 0 2px 2px; }
 
-.header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before, .allow-right-icon::after {
+.header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -303,6 +303,35 @@ a {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     width: 200px; }
+
+.label {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 10px 7px;
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  box-shadow: 0 1px #ebebeb; }
+  .label .label-text {
+    text-decoration: none;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666; }
+  .label::before {
+    content: '\f3c5';
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    margin-right: 6px; }
+  .label::after {
+    content: '\f0da';
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    margin-left: 6px; }
+
+.label-area {
+  background-color: #ebebeb;
+  box-shadow: 0 2px #d2d2d2; }
+  .label-area::before {
+    content: '\f02b'; }
 
 .media {
   display: flex;
