@@ -116,6 +116,31 @@ a {
   .btn-circle::before {
     color: #d0d0d0; }
 
+.detail {
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+  background-color: #fafafa; }
+  .detail .detail-body {
+    padding: 8px 8px 12px;
+    font-size: 11px;
+    font-size: 1.1rem; }
+    .detail .detail-body .detail-title {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #666;
+      font-weight: bold; }
+    .detail .detail-body dl dt {
+      color: #999;
+      float: left;
+      clear: both; }
+    .detail .detail-body dl dd {
+      padding-left: 5em;
+      margin-bottom: 4px; }
+  .detail .detail-footer {
+    padding: 8px 8px 12px;
+    border-top: solid 1px #e5e5e5; }
+
 .footer .footer-heading {
   position: relative;
   display: block;
@@ -424,7 +449,7 @@ a.media {
 .section-container-small {
   padding: 0 8px; }
 
-.section-container-border-none {
+.border-is-hide {
   border: none; }
 
 .text-xlarge {

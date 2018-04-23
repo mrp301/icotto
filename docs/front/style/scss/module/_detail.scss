@@ -1,0 +1,40 @@
+.detail {
+  border: solid 1px $border-color;
+  border-radius: 2px;
+  background-color: #fafafa;
+
+  .detail-body {
+    padding: 8px 8px 12px;
+    font-size: 11px;
+    font-size: 1.1rem;
+
+    .detail-title {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #666;
+      font-weight: bold;
+    }
+
+    dl {
+
+      dt {
+        color: #999;
+        float: left;
+        clear: both;
+      }
+
+      dd {
+        padding-left: 5em;
+        margin-bottom: 4px;
+      }
+    }
+
+  }
+
+  .detail-footer {
+    padding: 8px 8px 12px;
+    background-color: #fff;
+    border-top: solid 1px $border-color;
+  }
+}
