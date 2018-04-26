@@ -1,0 +1,21 @@
+.icon-text-container {
+  position: relative;
+  padding: 8px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../../../img/social/line.png);
+    background-size: contain;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-text {
+    margin-left: 28px;
+  }
+}

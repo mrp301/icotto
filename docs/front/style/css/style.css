@@ -7,7 +7,7 @@ html {
   font-size: 1.4;
   line-height: 1.5;
   color: #333;
-  margin: 56px auto 0;
+  margin: 48px auto 0;
   max-width: 700px; }
 
 a {
@@ -139,6 +139,7 @@ a {
       margin-bottom: 4px; }
   .detail .detail-footer {
     padding: 8px 8px 12px;
+    background-color: #fff;
     border-top: solid 1px #e5e5e5; }
 
 .footer .footer-heading {
@@ -291,6 +292,24 @@ a {
     color: #fff;
     background-color: #e84e65;
     border-radius: 0 0 2px 2px; }
+
+.icon-text-container {
+  position: relative;
+  padding: 8px; }
+  .icon-text-container::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../../../img/social/line.png);
+    background-size: contain;
+    top: 50%;
+    left: 8px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 20px;
+    height: 20px; }
+  .icon-text-container .icon-text {
+    margin-left: 28px; }
 
 .header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after {
   font-family: "Font Awesome 5 Free";
@@ -451,6 +470,61 @@ a.media {
 
 .border-is-hide {
   border: none; }
+
+.sns {
+  display: flex; }
+  .sns .sns-btn {
+    margin-right: 2px;
+    text-align: center;
+    line-height: 52px;
+    height: 40px;
+    width: 20%;
+    border-radius: 2px; }
+    .sns .sns-btn:last-child {
+      margin-right: 0; }
+    .sns .sns-btn .sns-btn-icon {
+      width: 20px; }
+  .sns .pocket {
+    background-color: #ff4157;
+    box-shadow: 0 2px #cb3649; }
+  .sns .twitter {
+    background-color: #55acee;
+    box-shadow: 0 2px #4892cb; }
+  .sns .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 2px #324c81; }
+  .sns .hatenabookmark {
+    background-color: #00a5de;
+    box-shadow: 0 2px #008cbd; }
+  .sns .line {
+    background-color: #00c300;
+    box-shadow: 0 2px #037903; }
+  .sns .sns-btn-large {
+    margin-right: 5px;
+    text-align: center;
+    line-height: 56px;
+    height: 44px;
+    width: 33.330%;
+    border-radius: 2px; }
+    .sns .sns-btn-large:last-child {
+      margin-right: 0; }
+    .sns .sns-btn-large .sns-btn-icon {
+      width: 20px; }
+  .sns .pocket {
+    background-color: #ff4157;
+    box-shadow: 0 3px #cb3649; }
+  .sns .twitter {
+    background-color: #55acee;
+    box-shadow: 0 3px #4892cb; }
+  .sns .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 3px #324c81; }
+  .sns .hatenabookmark {
+    background-color: #00a5de;
+    box-shadow: 0 3px #008cbd; }
+  .sns .line {
+    background-color: #00c300;
+    box-shadow: 0 3px #037903; }
 
 .text-xlarge {
   font-size: 18px;

@@ -1,0 +1,103 @@
+// ボタンの色定義
+$pocket: #ff4157;
+$pocket-shadow: #cb3649;
+
+$twitter: #55acee;
+$twitter-shadow: #4892cb;
+
+$facebook: #3b5998;
+$facebook-shadow: #324c81;
+
+$hatenabookmark: #00a5de;
+$hatenabookmark-shadow: #008cbd;
+
+$line: #00c300;
+$line-shadow: #037903;
+
+.sns {
+  display: flex;
+
+  .sns-btn {
+    margin-right: 2px;
+    text-align: center;
+    line-height: 52px;
+    height: 40px;
+    width: 20%;
+    border-radius: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .sns-btn-icon {
+      width: 20px;
+    }
+  }
+
+  .pocket {
+    background-color: $pocket;
+    box-shadow: 0 2px $pocket-shadow;
+  }
+
+  .twitter {
+    background-color: $twitter;
+    box-shadow: 0 2px $twitter-shadow;
+  }
+
+  .facebook {
+    background-color: $facebook;
+    box-shadow: 0 2px $facebook-shadow;
+  }
+
+  .hatenabookmark {
+    background-color: $hatenabookmark;
+    box-shadow: 0 2px $hatenabookmark-shadow;
+  }
+
+  .line {
+    background-color: $line;
+    box-shadow: 0 2px $line-shadow;
+  }
+
+  .sns-btn-large {
+    margin-right: 5px;
+    text-align: center;
+    line-height: 56px;
+    height: 44px;
+    width: 33.330%;
+    border-radius: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .sns-btn-icon {
+      width: 20px;
+    }
+  }
+
+  .pocket {
+    background-color: $pocket;
+    box-shadow: 0 3px $pocket-shadow;
+  }
+
+  .twitter {
+    background-color: $twitter;
+    box-shadow: 0 3px $twitter-shadow;
+  }
+
+  .facebook {
+    background-color: $facebook;
+    box-shadow: 0 3px $facebook-shadow;
+  }
+
+  .hatenabookmark {
+    background-color: $hatenabookmark;
+    box-shadow: 0 3px $hatenabookmark-shadow;
+  }
+
+  .line {
+    background-color: $line;
+    box-shadow: 0 3px $line-shadow;
+  }
+}
