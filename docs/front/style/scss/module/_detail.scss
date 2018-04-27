@@ -115,6 +115,36 @@
       font-size: 13px;
     }
   }
+
+  .detail-icon {
+
+    &::before {
+      color: #999;
+      @extend %icon;
+      margin-right: 8px;
+      font-size: 1.1rem !important;
+      font-size: 11px !important;
+    }
+  }
+
+  .detail-pin-icon {
+
+    &::before {
+      content: '\f3c5';
+    }
+  }
+
+  .detail-sun-icon {
+    &::before {
+      content: '\f185';
+    }
+  }
+
+  .detail-moon-icon {
+    &::before {
+      content: '\f186';
+    }
+  }
 }
 
 .l-detail-balloon-img {

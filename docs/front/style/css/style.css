@@ -194,6 +194,17 @@ a {
     .detail .detail-balloon .detail-balloon-anchor {
       font-size: 1.3rem;
       font-size: 13px; }
+  .detail .detail-icon::before {
+    color: #999;
+    margin-right: 8px;
+    font-size: 1.1rem !important;
+    font-size: 11px !important; }
+  .detail .detail-pin-icon::before {
+    content: '\f3c5'; }
+  .detail .detail-sun-icon::before {
+    content: '\f185'; }
+  .detail .detail-moon-icon::before {
+    content: '\f186'; }
 
 .l-detail-balloon-img {
   margin-right: 10px; }
@@ -387,7 +398,7 @@ a {
   .icon-text-container .icon-text {
     margin-left: 28px; }
 
-.detail .detail-header::after, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after, .monthly-ranking::after {
+.detail .detail-header::after, .detail .detail-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after, .monthly-ranking::after, .share::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -427,7 +438,7 @@ a {
       content: '';
       position: absolute;
       display: block;
-      background-image: url(../../../img/social/line-wite.png);
+      background-image: url(../../../img/social/line-white.png);
       background-size: contain;
       top: 50%;
       left: 8px;
@@ -574,18 +585,33 @@ a.media {
 .border-is-hide {
   border: none; }
 
+.share {
+  position: relative;
+  color: #666; }
+  .share::after {
+    position: absolute;
+    top: -8px;
+    right: 33px;
+    display: block;
+    opacity: .5;
+    content: '\f004';
+    font-size: 26px;
+    color: #ffc2a8;
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg); }
+
 .sns {
   display: flex; }
-  .sns .sns-btn {
+  .sns .sns-five-division {
     margin-right: 2px;
     text-align: center;
     line-height: 52px;
     height: 40px;
     width: 20%;
     border-radius: 2px; }
-    .sns .sns-btn:last-child {
+    .sns .sns-five-division:last-child {
       margin-right: 0; }
-    .sns .sns-btn .sns-btn-icon {
+    .sns .sns-five-division .sns-btn-icon {
       width: 20px; }
   .sns .sns-four-division {
     margin-right: 6px;
@@ -604,16 +630,16 @@ a.media {
       font-size: .9rem;
       font-size: 9px;
       text-decoration: none; }
-  .sns .sns-btn-large {
+  .sns .sns-three-division {
     margin-right: 5px;
     text-align: center;
     line-height: 56px;
     height: 44px;
     width: 33.3%;
     border-radius: 2px; }
-    .sns .sns-btn-large:last-child {
+    .sns .sns-three-division:last-child {
       margin-right: 0; }
-    .sns .sns-btn-large .sns-btn-icon {
+    .sns .sns-three-division .sns-btn-icon {
       width: 20px;
       height: 20px; }
   .sns .pocket {
@@ -675,8 +701,8 @@ a.media {
     background-size: contain;
     top: 16px;
     right: 16px;
-    width: 20px;
-    height: 20px; }
+    width: 14px;
+    height: 14px; }
   .tweet .tweet-user {
     display: flex;
     margin-bottom: 8px; }

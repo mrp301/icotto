@@ -10,14 +10,14 @@
   background-color: $main-color;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #fff!important;
+  color: #fff !important;
   text-decoration: none;
 
   &::after {
     position: absolute;
     top: 9px;
     right: 10px;
-    font-size: 28px!important;
+    font-size: 28px !important;
     color: #fff;
   }
 }
@@ -37,8 +37,8 @@
   //アイコン用クラスを読み込んで、サイズを変更している。
   //アイコン用のクラスだけ作ればplain、circleボタン共に対応できる
   &::before {
-    font-size: 16px!important;
-    font-size: 1.6rem!important;
+    font-size: 16px !important;
+    font-size: 1.6rem !important;
     margin-right: 4px;
     color: #d0d0d0;
   }
@@ -55,7 +55,7 @@
   line-height: 64px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .15);
 
   //アイコンの色
   &::before {
