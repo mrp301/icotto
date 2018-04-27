@@ -12,7 +12,7 @@ $hatenabookmark: #00a5de;
 $hatenabookmark-shadow: #008cbd;
 
 $line: #00c300;
-$line-shadow: #037903;
+$line-shadow: #0d9a0d;
 
 .sns {
   display: flex;
@@ -31,6 +31,49 @@ $line-shadow: #037903;
 
     .sns-btn-icon {
       width: 20px;
+    }
+  }
+
+  .sns-four-division {
+    margin-right: 6px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0 5px;
+    width: 25%;
+    border-radius: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .sns-btn-icon {
+      width: 20px;
+    }
+
+    .sns-btn-text {
+      display: block;
+      color: #fff;
+      font-size: .9rem;
+      font-size: 9px;
+      text-decoration: none;
+    }
+  }
+
+  .sns-btn-large {
+    margin-right: 5px;
+    text-align: center;
+    line-height: 56px;
+    height: 44px;
+    width: 33.3%;
+    border-radius: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .sns-btn-icon {
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -59,45 +102,5 @@ $line-shadow: #037903;
     box-shadow: 0 2px $line-shadow;
   }
 
-  .sns-btn-large {
-    margin-right: 5px;
-    text-align: center;
-    line-height: 56px;
-    height: 44px;
-    width: 33.330%;
-    border-radius: 2px;
 
-    &:last-child {
-      margin-right: 0;
-    }
-
-    .sns-btn-icon {
-      width: 20px;
-    }
-  }
-
-  .pocket {
-    background-color: $pocket;
-    box-shadow: 0 3px $pocket-shadow;
-  }
-
-  .twitter {
-    background-color: $twitter;
-    box-shadow: 0 3px $twitter-shadow;
-  }
-
-  .facebook {
-    background-color: $facebook;
-    box-shadow: 0 3px $facebook-shadow;
-  }
-
-  .hatenabookmark {
-    background-color: $hatenabookmark;
-    box-shadow: 0 3px $hatenabookmark-shadow;
-  }
-
-  .line {
-    background-color: $line;
-    box-shadow: 0 3px $line-shadow;
-  }
 }

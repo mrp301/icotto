@@ -16,14 +16,28 @@
   }
 
   .icotto-line-btn {
+    position: relative;
     display: inline-block;
-    margin: 16px 0;
-    padding: 12px 10px;
+    margin: 16px;
+    padding: 22px 10px 22px 38px;
     color: #fff;
     font-size: 14px;
     font-size: 1.4rem;
     border-radius: 2px;
     background-color: #00c300;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(../../../img/social/line-wite.png);
+      background-size: contain;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .icotto-line-img {

@@ -120,6 +120,16 @@ a {
   border: solid 1px #e5e5e5;
   border-radius: 2px;
   background-color: #fafafa; }
+  .detail .detail-header {
+    position: relative;
+    background-color: #ebebeb;
+    height: 40px; }
+    .detail .detail-header::after {
+      position: absolute;
+      top: 5px;
+      left: 12px;
+      color: #fff;
+      content: '\f0c6'; }
   .detail .detail-body {
     padding: 8px 8px 12px;
     font-size: 11px;
@@ -137,10 +147,56 @@ a {
     .detail .detail-body dl dd {
       padding-left: 5em;
       margin-bottom: 4px; }
-  .detail .detail-footer {
-    padding: 8px 8px 12px;
+      .detail .detail-body dl dd:last-child {
+        margin-bottom: 16px; }
+    .detail .detail-body .detail-body-quote {
+      text-align: right;
+      color: #999; }
+  .detail .detail-balloon {
+    position: relative;
+    display: flex;
+    padding: 8px 8px;
     background-color: #fff;
     border-top: solid 1px #e5e5e5; }
+    .detail .detail-balloon:before {
+      position: absolute;
+      top: -11px;
+      left: 20px;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: transparent transparent #e5e5e5; }
+    .detail .detail-balloon:after {
+      position: absolute;
+      top: -9px;
+      left: 20px;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: transparent transparent #fff; }
+    .detail .detail-balloon .detail-balloon-img {
+      width: 44px;
+      height: 44px; }
+    .detail .detail-balloon .detail-balloon-body {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .detail .detail-balloon .detail-balloon-body-head {
+      font-size: 11px;
+      font-weight: bold; }
+    .detail .detail-balloon .detail-balloon-anchor {
+      font-size: 1.3rem;
+      font-size: 13px; }
+
+.l-detail-balloon-img {
+  margin-right: 10px; }
 
 .footer .footer-heading {
   position: relative;
@@ -246,7 +302,8 @@ a {
       font-size: 18px;
       font-size: 1.8rem;
       font-weight: bold;
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      text-shadow: 0px 0px 3px #666; }
     .heading-main .heading-main-inner .heading-main-date {
       color: #ccc;
       font-size: 10px;
@@ -293,6 +350,25 @@ a {
     background-color: #e84e65;
     border-radius: 0 0 2px 2px; }
 
+.heading-detail {
+  position: relative;
+  font-size: 1.4rem;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding: 0 0 8px 30px;
+  border-bottom: solid 1px #e5e5e5; }
+  .heading-detail:before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    text-align: center;
+    width: 24px;
+    height: 34px;
+    color: #ffb415;
+    content: '\f2e7';
+    border-bottom: solid 1px #ffb415; }
+
 .icon-text-container {
   position: relative;
   padding: 8px; }
@@ -311,7 +387,7 @@ a {
   .icon-text-container .icon-text {
     margin-left: 28px; }
 
-.header .header-menu::after, .header .header-history::after, .header .header-search::after, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after {
+.detail .detail-header::after, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .label::before, .label::after, .monthly-ranking::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -338,14 +414,27 @@ a {
     line-height: 1.2;
     margin-bottom: 12px; }
   .icotto-line .icotto-line-btn {
+    position: relative;
     display: inline-block;
-    margin: 16px 0;
-    padding: 12px 10px;
+    margin: 16px;
+    padding: 22px 10px 22px 38px;
     color: #fff;
     font-size: 14px;
     font-size: 1.4rem;
     border-radius: 2px;
     background-color: #00c300; }
+    .icotto-line .icotto-line-btn::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(../../../img/social/line-wite.png);
+      background-size: contain;
+      top: 50%;
+      left: 8px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 24px;
+      height: 24px; }
   .icotto-line .icotto-line-img {
     position: absolute;
     right: 50%;
@@ -402,6 +491,20 @@ a {
 a.media {
   text-decoration: none;
   color: #333 !important; }
+
+.monthly-ranking {
+  display: block;
+  padding: 0 8px;
+  text-align: right;
+  font-size: 1.2rem;
+  font-size: 12px;
+  text-decoration: none; }
+  .monthly-ranking::after {
+    content: '\f061';
+    margin-left: 8px;
+    font-size: 1.6rem;
+    font-size: 16px;
+    color: #d0d0d0; }
 
 .paganation {
   display: flex;
@@ -484,6 +587,35 @@ a.media {
       margin-right: 0; }
     .sns .sns-btn .sns-btn-icon {
       width: 20px; }
+  .sns .sns-four-division {
+    margin-right: 6px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0 5px;
+    width: 25%;
+    border-radius: 2px; }
+    .sns .sns-four-division:last-child {
+      margin-right: 0; }
+    .sns .sns-four-division .sns-btn-icon {
+      width: 20px; }
+    .sns .sns-four-division .sns-btn-text {
+      display: block;
+      color: #fff;
+      font-size: .9rem;
+      font-size: 9px;
+      text-decoration: none; }
+  .sns .sns-btn-large {
+    margin-right: 5px;
+    text-align: center;
+    line-height: 56px;
+    height: 44px;
+    width: 33.3%;
+    border-radius: 2px; }
+    .sns .sns-btn-large:last-child {
+      margin-right: 0; }
+    .sns .sns-btn-large .sns-btn-icon {
+      width: 20px;
+      height: 20px; }
   .sns .pocket {
     background-color: #ff4157;
     box-shadow: 0 2px #cb3649; }
@@ -498,33 +630,7 @@ a.media {
     box-shadow: 0 2px #008cbd; }
   .sns .line {
     background-color: #00c300;
-    box-shadow: 0 2px #037903; }
-  .sns .sns-btn-large {
-    margin-right: 5px;
-    text-align: center;
-    line-height: 56px;
-    height: 44px;
-    width: 33.330%;
-    border-radius: 2px; }
-    .sns .sns-btn-large:last-child {
-      margin-right: 0; }
-    .sns .sns-btn-large .sns-btn-icon {
-      width: 20px; }
-  .sns .pocket {
-    background-color: #ff4157;
-    box-shadow: 0 3px #cb3649; }
-  .sns .twitter {
-    background-color: #55acee;
-    box-shadow: 0 3px #4892cb; }
-  .sns .facebook {
-    background-color: #3b5998;
-    box-shadow: 0 3px #324c81; }
-  .sns .hatenabookmark {
-    background-color: #00a5de;
-    box-shadow: 0 3px #008cbd; }
-  .sns .line {
-    background-color: #00c300;
-    box-shadow: 0 3px #037903; }
+    box-shadow: 0 2px #0d9a0d; }
 
 .text-xlarge {
   font-size: 18px;
@@ -555,6 +661,42 @@ a.media {
   font-size: 1.3rem;
   color: #666;
   letter-spacing: .05rem; }
+
+.tweet {
+  position: relative;
+  border: solid 1px #e5e5e5;
+  border-radius: 4px;
+  padding: 17px 17px 10px; }
+  .tweet::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../../../img/social/twitter.png);
+    background-size: contain;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px; }
+  .tweet .tweet-user {
+    display: flex;
+    margin-bottom: 8px; }
+    .tweet .tweet-user .tweet-user-icon {
+      margin-right: 10px; }
+      .tweet .tweet-user .tweet-user-icon .tweet-user-icon-img {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px; }
+  .tweet .tweet-user-profile {
+    line-height: 1; }
+    .tweet .tweet-user-profile .tweet-user-profile-name {
+      font-weight: bold; }
+    .tweet .tweet-user-profile .tweet-user-profile-id {
+      font-size: 12px;
+      color: #999; }
+  .tweet .tweet-date {
+    font-size: 1.2rem;
+    font-size: 12px;
+    color: #666; }
 
 .writer {
   display: table;
