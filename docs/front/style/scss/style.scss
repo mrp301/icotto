@@ -1,12 +1,17 @@
 //base
+@import './base/_reset';
 @import './base/_base';
 
 //layout
 @import './layout/_header';
+@import './layout/_label';
+@import './layout/_mainVisual';
+@import './layout/_sns';
 @import './layout/_utility';
 
 //module
 @import './module/_btn';
+@import './module/_description';
 @import './module/_detail';
 @import './module/_footer';
 @import './module/_header';
@@ -15,9 +20,10 @@
 @import './module/_icon';
 @import './module/_icotto-line';
 @import './module/_label';
+@import './module/_mainVisual';
 @import './module/_media';
 @import './module/_monthly-ranking';
-@import './module/_paganation';
+@import './module/_pagenation';
 @import './module/_ranking';
 @import './module/_section-container';
 @import './module/_share';

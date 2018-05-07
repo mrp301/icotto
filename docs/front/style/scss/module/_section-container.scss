@@ -1,6 +1,9 @@
 %section-container {
-  border-bottom: dotted 1px $border-color;
   margin-bottom: 32px;
+
+  .section-container-border-bottom {
+    border-bottom: dotted 1px $border-color;
+  }
 }
 
 .section-container-large {

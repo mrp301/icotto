@@ -1,20 +1,24 @@
-.writer {
-  display: table;
+.writer-container {
+  background-color:  #fafafa;
   padding: 8px 12px;
 
-  .writer-icon {
-    display: table-cell;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    border-radius: 50%;
-  }
+  .writer {
+    display: table;
 
-  .writer-name {
-    display: table-cell;
-    vertical-align: middle;
-    color: #666;
-    font-size: 11px;
-    font-size: 1.1rem;
+    .writer-icon {
+      display: table-cell;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+
+    .writer-name {
+      display: table-cell;
+      vertical-align: middle;
+      color: #666;
+      font-size: 11px;
+      font-size: 1.1rem;
+    }
   }
 }

@@ -1,7 +1,8 @@
 .header {
   height: 48px;
   width: 100%;
-  background-color: $main-color;
+  background: $main-color;
+  background: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0, #ff6726), color-stop(100%, #fd4e28));
 
   .header-icon-container {
     display: block;

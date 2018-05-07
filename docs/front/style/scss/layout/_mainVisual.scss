@@ -1,0 +1,20 @@
+.l-mainVisual {
+  position: relative;
+  padding: 16px 12px;
+  max-width: 100%;
+  height: 240px - 32px;
+  background-image: url(../../../img/main-image.jpg);
+  background-size: cover;
+  background-position: center;
+　background-repeat: no-repeat;
+  object-fit: cover;
+
+  .l-mainVisual-inner {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg,transparent 0,rgba(41, 20, 5, .7));
+  }
+}

@@ -1,48 +1,59 @@
-//四角ボタン メインカラー
-//角丸ボタン 白ボタン
-//丸ボタン
-
 .btn {
   display: block;
-  position: relative;
   padding: 16px 0;
   text-align: center;
-  background-color: $main-color;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #fff !important;
   text-decoration: none;
 
-  &::after {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    font-size: 28px !important;
+  &.btn-clip {
+    position: relative;
+    padding: 11px 0;
+    font-size: 1.4px;
+    font-size: 1.4rem;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0 2px #ebebeb;
+    color: #333;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f0c6';
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin-right: 4px;
+      color: #d0d0d0;
+    }
+  }
+
+  &.btn-arrow {
+    position: relative;
+    background-color: $main-color;
+    color: #fff;
+
+    &::after {
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f105';
+      font-size: 20px;
+      font-size: 2rem;
+      top: 13px;
+      right: 10px;
+      color: #fff;
+    }
+  }
+
+  &.btn-login {
+    background-color: $main-color;
     color: #fff;
   }
 }
 
-.btn-plain {
-  display: block;
-  padding: 11px 0;
-  text-align: center;
-  font-size: 14px;
-  font-size: 1.4rem;
-  border: solid 1px #ebebeb;
-  border-radius: 4px;
-  box-shadow: 0 2px #ebebeb;
-  color: #333!important;
-  text-decoration: none;
 
-  //アイコン用クラスを読み込んで、サイズを変更している。
-  //アイコン用のクラスだけ作ればplain、circleボタン共に対応できる
-  &::before {
-    font-size: 16px !important;
-    font-size: 1.6rem !important;
-    margin-right: 4px;
-    color: #d0d0d0;
-  }
-}
+
+
 
 .btn-circle {
   position: absolute;
@@ -57,7 +68,6 @@
   background-color: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, .15);
 
-  //アイコンの色
   &::before {
     color: #d0d0d0;
   }

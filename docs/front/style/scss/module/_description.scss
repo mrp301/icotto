@@ -1,0 +1,11 @@
+.description {
+  position: relative;
+  background-color: #fafafa;
+
+  .description-text {
+    font-size: 1.3px;
+    font-size: 1.3rem;
+    color: $sub-text;
+    letter-spacing: .05rem;
+  }
+}

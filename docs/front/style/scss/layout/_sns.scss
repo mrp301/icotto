@@ -1,0 +1,30 @@
+  //snsボタンの配置
+.l-sns {
+  display: flex;
+
+  li {
+    margin-right: 6px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  &.l-sns-five {
+    li {
+      width: 20%;
+    }
+  }
+
+  &.l-sns-four {
+    li {
+      width: 25%;
+    }
+  }
+
+  &.l-sns-three {
+    li {
+      width: 33.3%;
+    }
+  }
+}
