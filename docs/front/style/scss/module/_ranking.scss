@@ -1,7 +1,31 @@
-.ranking-container {
+.ranking {
   position: relative;
+  display: flex;
+  border-bottom: solid 1px #f8f7f5;
+  text-decoration: none;
+  color: $main-text !important;
 
-  .rankig {
+  .ranking-thumbnail-container {
+    height: 96px;
+
+   .ranking-thumbnail {
+     width: 96px;
+     height: 96px;
+   }
+  }
+
+  .ranking-body {
+    padding: 8px 8px 0 12px;
+    width: 100%;
+
+    .ranking-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 21px;
+    }
+  }
+
+  .ranking-ribon {
     content: '';
     display: block;
     position: absolute;
@@ -13,7 +37,7 @@
     border-width: 34px 34px 0 0;
     border-color: transparent $main-color transparent transparent;
 
-    .ranking-text {
+    .ranking-ribon-text {
       position: absolute;
       bottom: 0;
       left: -5px;
@@ -36,5 +60,4 @@
   .ranking-third {
     border-right-color: #b27f60;
   }
-
 }

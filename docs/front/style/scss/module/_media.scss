@@ -1,6 +1,8 @@
 .media {
   display: flex;
   border-bottom: solid 1px #f8f7f5;
+  text-decoration: none;
+  color: $main-text !important;
 
   .media-thumbnail-container {
     height: 96px;
@@ -21,9 +23,4 @@
       line-height: 21px;
     }
   }
-}
-
-a.media {
-  text-decoration: none;
-  color: $main-text!important;
 }

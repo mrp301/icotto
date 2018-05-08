@@ -578,7 +578,9 @@ a {
 
 .media {
   display: flex;
-  border-bottom: solid 1px #f8f7f5; }
+  border-bottom: solid 1px #f8f7f5;
+  text-decoration: none;
+  color: #333 !important; }
   .media .media-thumbnail-container {
     height: 96px; }
     .media .media-thumbnail-container .media-thumbnail {
@@ -591,10 +593,6 @@ a {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }
-
-a.media {
-  text-decoration: none;
-  color: #333 !important; }
 
 .monthly-ranking {
   display: block;
@@ -633,9 +631,25 @@ a.media {
   .pagenation .pagenation-item-hide {
     border: none; }
 
-.ranking-container {
-  position: relative; }
-  .ranking-container .rankig {
+.ranking {
+  position: relative;
+  display: flex;
+  border-bottom: solid 1px #f8f7f5;
+  text-decoration: none;
+  color: #333 !important; }
+  .ranking .ranking-thumbnail-container {
+    height: 96px; }
+    .ranking .ranking-thumbnail-container .ranking-thumbnail {
+      width: 96px;
+      height: 96px; }
+  .ranking .ranking-body {
+    padding: 8px 8px 0 12px;
+    width: 100%; }
+    .ranking .ranking-body .ranking-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 21px; }
+  .ranking .ranking-ribon {
     content: '';
     display: block;
     position: absolute;
@@ -646,7 +660,7 @@ a.media {
     border-style: solid;
     border-width: 34px 34px 0 0;
     border-color: transparent #ff6726 transparent transparent; }
-    .ranking-container .rankig .ranking-text {
+    .ranking .ranking-ribon .ranking-ribon-text {
       position: absolute;
       bottom: 0;
       left: -5px;
@@ -655,11 +669,11 @@ a.media {
       font-size: 13px;
       font-size: 1.3rem;
       text-align: right; }
-  .ranking-container .ranking-first {
+  .ranking .ranking-first {
     border-right-color: #c69b45; }
-  .ranking-container .ranking-second {
+  .ranking .ranking-second {
     border-right-color: #a0a3a6; }
-  .ranking-container .ranking-third {
+  .ranking .ranking-third {
     border-right-color: #b27f60; }
 
 .section-container-large, .section-container-medium, .section-container-small {
