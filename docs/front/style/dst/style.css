@@ -46,6 +46,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+figure {
+  line-height: 0; }
+
 html {
   font-size: 62.5%; }
 
@@ -63,6 +66,12 @@ a {
     color: #333; }
   a:visited {
     color: #666; }
+
+.l-text-cite {
+  display: flex;
+  align-items: center; }
+  .l-text-cite * {
+    display: inline-block; }
 
 .l-header {
   position: fixed;
@@ -637,20 +646,18 @@ a {
   border-bottom: solid 1px #f8f7f5;
   text-decoration: none;
   color: #333 !important; }
-  .ranking .ranking-thumbnail-container {
+  .ranking .ranking-thumbnail {
+    width: 96px;
     height: 96px; }
-    .ranking .ranking-thumbnail-container .ranking-thumbnail {
-      width: 96px;
-      height: 96px; }
   .ranking .ranking-body {
     padding: 8px 8px 0 12px;
     width: 100%; }
     .ranking .ranking-body .ranking-title {
       font-size: 1.4rem;
+      font-size: 14px;
       font-weight: bold;
       line-height: 21px; }
-  .ranking .ranking-ribon {
-    content: '';
+  .ranking .ranking-icon {
     display: block;
     position: absolute;
     right: 0;
@@ -660,7 +667,7 @@ a {
     border-style: solid;
     border-width: 34px 34px 0 0;
     border-color: transparent #ff6726 transparent transparent; }
-    .ranking .ranking-ribon .ranking-ribon-text {
+    .ranking .ranking-icon .ranking-icon-text {
       position: absolute;
       bottom: 0;
       left: -5px;
@@ -757,9 +764,13 @@ a {
   font-size: 10px;
   font-size: 1rem; }
 
-.note-text {
+.text-cite {
   font-size: 11px;
   font-size: 1.1rem; }
+  .text-cite .text-cite-head {
+    color: #666; }
+  .text-cite .text-cite-icon {
+    height: 18px; }
 
 .description-text {
   font-size: 1.3px;
@@ -799,9 +810,41 @@ a {
       font-size: 12px;
       color: #999; }
   .tweet .tweet-date {
+    font-size: 1.1rem;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 8px; }
+  .tweet .tweet-like {
+    text-decoration: none; }
+    .tweet .tweet-like::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f004';
+      color: #d0d0d0;
+      font-size: 1.2rem;
+      margin: 0 14px 0 4px; }
+  .tweet .tweet-other {
+    max-width: 84%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 1.2rem;
     font-size: 12px;
-    color: #666; }
+    color: #697882;
+    text-decoration: none; }
+    .tweet .tweet-other::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f007';
+      color: #d0d0d0;
+      font-size: 1.2rem;
+      margin-right: 14px; }
+  .tweet .tweet-info::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: '\f05a';
+    color: #999;
+    font-size: 1.2rem; }
 
 .writer-container {
   background-color: #fafafa;
