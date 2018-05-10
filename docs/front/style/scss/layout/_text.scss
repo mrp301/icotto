@@ -1,0 +1,8 @@
+.l-text {
+  display: flex;
+  align-items: center;
+
+  &.l-text-right {
+    justify-content: flex-end;
+  }
+}

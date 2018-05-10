@@ -20,40 +20,43 @@
 
   .detail-body {
     padding: 8px 8px 12px;
-    font-size: 11px;
     font-size: 1.1rem;
 
     .detail-title {
-      margin-bottom: 8px;
-      font-size: 16px;
       font-size: 1.6rem;
       color: #666;
       font-weight: bold;
     }
 
+    // todo:定義リストmoduleで切り分ける
     dl {
 
       dt {
-        color: #999;
         float: left;
         clear: both;
+        width: 56px;
+        color: #999;
       }
 
       dd {
-        padding-left: 5em;
         margin-bottom: 4px;
-
-        &:last-child {
-          margin-bottom: 16px;
-        }
       }
     }
 
+    // todo:色を変更する汎用クラスを作って対応する
     .detail-body-quote {
-      text-align: right;
       color: #999;
     }
   }
+
+  .l-sideBySide {
+
+    dd {
+      display: inline-block;
+      margin-right: 14px;
+    }
+  }
+  // todo:定義リストmoduleで切り分ける
 
   .detail-balloon {
     position: relative;
@@ -91,6 +94,7 @@
     .detail-balloon-img {
       width: 44px;
       height: 44px;
+      margin-right: 10px;
     }
 
     .detail-balloon-body {
@@ -101,7 +105,7 @@
     }
 
     .detail-balloon-body-head {
-      font-size: 11px;
+      font-size: 1.1rem;
       font-weight: bold;
     }
 
@@ -116,9 +120,8 @@
     &::before {
       color: #999;
       @extend %icon;
-      margin-right: 8px;
+      margin-right: 5px;
       font-size: 1.1rem !important;
-      font-size: 11px !important;
     }
   }
 
@@ -140,9 +143,4 @@
       content: '\f186';
     }
   }
-}
-
-// ToDo:後ほど調整。仮で置いてます
-.l-detail-balloon-img {
-  margin-right: 10px;
 }

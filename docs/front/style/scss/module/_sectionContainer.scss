@@ -1,0 +1,19 @@
+.sectionContainer {
+  margin-bottom: 32px;
+
+  &.sectionContainer-borderBottom {
+    border-bottom: dotted 1px $border-color;
+  }
+
+  &.sectionContainer-large {
+    padding: 0 16px;
+  }
+
+  &.sectionContainer-medium {
+    padding: 0 12px;
+  }
+
+  &.sectionContainer-small {
+    padding: 0 8px;
+  }
+}

@@ -67,11 +67,17 @@ a {
   a:visited {
     color: #666; }
 
-.l-text-cite {
+.l-description {
+  position: relative;
+  padding: 0 16px 36px;
+  background-color: #fafafa;
+  border-bottom: solid 1px #ebebeb; }
+
+.l-text {
   display: flex;
   align-items: center; }
-  .l-text-cite * {
-    display: inline-block; }
+  .l-text.l-text-right {
+    justify-content: flex-end; }
 
 .l-header {
   position: fixed;
@@ -109,16 +115,22 @@ a {
 
 .l-sns {
   display: flex; }
-  .l-sns li {
+  .l-sns.l-sns-five li {
+    width: 20%;
+    margin-right: 2px; }
+  .l-sns.l-sns-four li {
+    width: 25%;
+    margin-right: 6px; }
+  .l-sns.l-sns-three li {
+    width: 33.3%;
     margin-right: 6px; }
   .l-sns li:last-child {
     margin-right: 0; }
-  .l-sns.l-sns-five li {
-    width: 20%; }
-  .l-sns.l-sns-four li {
-    width: 25%; }
-  .l-sns.l-sns-three li {
-    width: 33.3%; }
+  .l-sns.l-sns-description {
+    padding: 0 16px;
+    margin: -22px 0 32px; }
+    .l-sns.l-sns-description li {
+      z-index: 2; }
 
 .l-left {
   float: left; }
@@ -218,14 +230,11 @@ a {
   .btn-circle::before {
     color: #d0d0d0; }
 
-.description {
-  position: relative;
-  background-color: #fafafa; }
-  .description .description-text {
-    font-size: 1.3px;
-    font-size: 1.3rem;
-    color: #666;
-    letter-spacing: .05rem; }
+.description .description-text {
+  font-size: 1.3px;
+  font-size: 1.3rem;
+  color: #666;
+  letter-spacing: .05rem; }
 
 .detail {
   border: solid 1px #e5e5e5;
@@ -243,26 +252,23 @@ a {
       content: '\f0c6'; }
   .detail .detail-body {
     padding: 8px 8px 12px;
-    font-size: 11px;
     font-size: 1.1rem; }
     .detail .detail-body .detail-title {
-      margin-bottom: 8px;
-      font-size: 16px;
       font-size: 1.6rem;
       color: #666;
       font-weight: bold; }
     .detail .detail-body dl dt {
-      color: #999;
       float: left;
-      clear: both; }
-    .detail .detail-body dl dd {
-      padding-left: 5em;
-      margin-bottom: 4px; }
-      .detail .detail-body dl dd:last-child {
-        margin-bottom: 16px; }
-    .detail .detail-body .detail-body-quote {
-      text-align: right;
+      clear: both;
+      width: 56px;
       color: #999; }
+    .detail .detail-body dl dd {
+      margin-bottom: 4px; }
+    .detail .detail-body .detail-body-quote {
+      color: #999; }
+  .detail .l-sideBySide dd {
+    display: inline-block;
+    margin-right: 14px; }
   .detail .detail-balloon {
     position: relative;
     display: flex;
@@ -293,32 +299,29 @@ a {
       border-color: transparent transparent #fff; }
     .detail .detail-balloon .detail-balloon-img {
       width: 44px;
-      height: 44px; }
+      height: 44px;
+      margin-right: 10px; }
     .detail .detail-balloon .detail-balloon-body {
       max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
     .detail .detail-balloon .detail-balloon-body-head {
-      font-size: 11px;
+      font-size: 1.1rem;
       font-weight: bold; }
     .detail .detail-balloon .detail-balloon-anchor {
       font-size: 1.3rem;
       font-size: 13px; }
   .detail .detail-icon::before {
     color: #999;
-    margin-right: 8px;
-    font-size: 1.1rem !important;
-    font-size: 11px !important; }
+    margin-right: 5px;
+    font-size: 1.1rem !important; }
   .detail .detail-pin-icon::before {
     content: '\f3c5'; }
   .detail .detail-sun-icon::before {
     content: '\f185'; }
   .detail .detail-moon-icon::before {
     content: '\f186'; }
-
-.l-detail-balloon-img {
-  margin-right: 10px; }
 
 .footer .footer-heading {
   position: relative;
@@ -683,22 +686,16 @@ a {
   .ranking .ranking-third {
     border-right-color: #b27f60; }
 
-.section-container-large, .section-container-medium, .section-container-small {
+.sectionContainer {
   margin-bottom: 32px; }
-  .section-container-large .section-container-border-bottom, .section-container-medium .section-container-border-bottom, .section-container-small .section-container-border-bottom {
+  .sectionContainer.sectionContainer-borderBottom {
     border-bottom: dotted 1px #e5e5e5; }
-
-.section-container-large {
-  padding: 0 16px; }
-
-.section-container-medium {
-  padding: 0 12px; }
-
-.section-container-small {
-  padding: 0 8px; }
-
-.border-is-hide {
-  border: none; }
+  .sectionContainer.sectionContainer-large {
+    padding: 0 16px; }
+  .sectionContainer.sectionContainer-medium {
+    padding: 0 12px; }
+  .sectionContainer.sectionContainer-small {
+    padding: 0 8px; }
 
 .share {
   position: relative;
@@ -769,7 +766,7 @@ a {
   font-size: 1.1rem; }
   .text-cite .text-cite-head {
     color: #666; }
-  .text-cite .text-cite-icon {
+  .text-cite .text-citeIcon {
     height: 18px; }
 
 .description-text {
@@ -811,7 +808,6 @@ a {
       color: #999; }
   .tweet .tweet-date {
     font-size: 1.1rem;
-    font-size: 11px;
     color: #666;
     margin-bottom: 8px; }
   .tweet .tweet-like {
@@ -824,12 +820,11 @@ a {
       font-size: 1.2rem;
       margin: 0 14px 0 4px; }
   .tweet .tweet-other {
-    max-width: 84%;
+    width: 84%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1.2rem;
-    font-size: 12px;
     color: #697882;
     text-decoration: none; }
     .tweet .tweet-other::before {
