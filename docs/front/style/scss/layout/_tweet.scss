@@ -1,13 +1,23 @@
 .l-tweet {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 
-  .l-tweet-icon {
-    //todo:.contentsについとるline-heightが原因。あとで治す。
+  .l-tweet-avatar {
     line-height: 0;
     margin-right: 10px;
   }
 
   .l-tweet-body {
     margin-bottom: 7.35px;
+  }
+
+  .l-tweet-icon {
+    vertical-align: text-bottom;
+  }
+
+  .l-tweet-other {
+    padding: 0 5px 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

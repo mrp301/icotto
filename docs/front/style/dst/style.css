@@ -61,7 +61,8 @@ html {
   max-width: 700px; }
 
 a {
-  font-size: 13px; }
+  font-size: 13px;
+  text-decoration: none; }
   a:link {
     color: #333; }
   a:visited {
@@ -93,12 +94,19 @@ a {
     justify-content: flex-end; }
 
 .l-tweet {
-  margin-bottom: 8px; }
-  .l-tweet .l-tweet-icon {
+  margin-bottom: 24px; }
+  .l-tweet .l-tweet-avatar {
     line-height: 0;
     margin-right: 10px; }
   .l-tweet .l-tweet-body {
     margin-bottom: 7.35px; }
+  .l-tweet .l-tweet-icon {
+    vertical-align: text-bottom; }
+  .l-tweet .l-tweet-other {
+    padding: 0 5px 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .l-header {
   position: fixed;
@@ -187,6 +195,9 @@ a {
 .l-align-right {
   text-align: right !important; }
 
+.l-flex {
+  display: flex; }
+
 .full {
   width: 100% !important; }
 
@@ -244,8 +255,11 @@ a {
       position: absolute;
       top: 5px;
       left: 12px;
+      font-family: "Font Awesome 5 Free";
+      content: '\f0c6';
+      font-size: 2rem;
       color: #fff;
-      content: '\f0c6'; }
+      font-weight: bold; }
   .detail .detail-body {
     padding: 8px 8px 12px;
     font-size: 1.1rem; }
@@ -267,7 +281,6 @@ a {
     margin-right: 14px; }
   .detail .detail-balloon {
     position: relative;
-    display: flex;
     padding: 8px 8px;
     background-color: #fff;
     border-top: solid 1px #e5e5e5; }
@@ -297,11 +310,6 @@ a {
       width: 44px;
       height: 44px;
       margin-right: 10px; }
-    .detail .detail-balloon .detail-balloon-body {
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
     .detail .detail-balloon .detail-balloon-body-head {
       font-size: 1.1rem;
       font-weight: bold; }
@@ -450,14 +458,10 @@ a {
   .icon-text-container .icon-text {
     margin-left: 28px; }
 
-.detail .detail-header::after, .detail .detail-icon::before, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .monthly-ranking::after, .share::after {
+.detail .detail-icon::before, .heading-detail:before, .allow-right-icon::after, .monthly-ranking::after, .share::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  font-size: 20px;
   font-size: 2rem; }
-
-.clip-icon::before {
-  content: '\f0c6'; }
 
 .allow-right-icon::after {
   content: '\f105'; }
@@ -607,11 +611,11 @@ a {
 .pagenation {
   display: flex;
   box-sizing: border-box; }
-  .pagenation .pagenation-item, .pagenation .pagenation-item-select, .pagenation .pagenation-item-hide {
+  .pagenation .pagenation-item, .pagenation .pagenation-item-select, .pagenation .pagenation-item-simple {
     border: solid 1px #e5e5e5;
     height: 48px;
     width: 20%; }
-    .pagenation .pagenation-item .pagenation-item-text, .pagenation .pagenation-item-select .pagenation-item-text, .pagenation .pagenation-item-hide .pagenation-item-text {
+    .pagenation .pagenation-item .pagenation-item-text, .pagenation .pagenation-item-select .pagenation-item-text, .pagenation .pagenation-item-simple .pagenation-item-text {
       display: block;
       text-align: center;
       line-height: 48px;
@@ -624,7 +628,7 @@ a {
     background-color: #ff6726; }
     .pagenation .pagenation-item-select .pagenation-item-text {
       color: #fff; }
-  .pagenation .pagenation-item-hide {
+  .pagenation .pagenation-item-simple {
     border: none; }
 
 .ranking {
@@ -670,16 +674,17 @@ a {
   .ranking .ranking-third {
     border-right-color: #b27f60; }
 
-.sectionContainer {
-  margin-bottom: 32px; }
-  .sectionContainer.sectionContainer-borderBottom {
-    border-bottom: dotted 1px #e5e5e5; }
-  .sectionContainer.sectionContainer-large {
-    padding: 0 16px; }
-  .sectionContainer.sectionContainer-medium {
-    padding: 0 12px; }
-  .sectionContainer.sectionContainer-small {
-    padding: 0 8px; }
+.sectionContainer-large {
+  padding: 0 16px; }
+
+.sectionContainer-medium {
+  padding: 0 12px; }
+
+.sectionContainer-small {
+  padding: 0 8px; }
+
+.sectionContainer-borderBottom {
+  border-bottom: dotted 1px #e5e5e5; }
 
 .share {
   position: relative;
@@ -757,6 +762,9 @@ a {
   letter-spacing: .05rem;
   color: #666; }
 
+.text-bold {
+  font-weight: bold; }
+
 .tweet {
   position: relative;
   border: solid 1px #e5e5e5;
@@ -771,7 +779,7 @@ a {
     right: 16px;
     width: 14px;
     height: 14px; }
-  .tweet .tweet-icon {
+  .tweet .tweet-avatar {
     border-radius: 50%;
     width: 36px;
     height: 36px; }
@@ -786,36 +794,12 @@ a {
   .tweet .tweet-date {
     font-size: 1.1rem;
     color: #666; }
-  .tweet .tweet-like {
-    text-decoration: none; }
-    .tweet .tweet-like::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f004';
-      color: #d0d0d0;
-      font-size: 1.2rem;
-      margin: 0 14px 0 4px; }
-  .tweet .tweet-other {
-    width: 84%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 1.2rem;
-    color: #697882;
-    text-decoration: none; }
-    .tweet .tweet-other::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f007';
-      color: #d0d0d0;
-      font-size: 1.2rem;
-      margin-right: 14px; }
-  .tweet .tweet-info::before {
-    font-family: "Font Awesome 5 Free";
+  .tweet .tweet-icon {
     font-weight: bold;
-    content: '\f05a';
-    color: #999;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #84929e; }
+  .tweet .tweet-other {
+    color: #84929e; }
 
 .writer-container {
   background-color: #fafafa;

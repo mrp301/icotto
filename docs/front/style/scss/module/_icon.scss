@@ -2,13 +2,7 @@
 %icon {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  font-size: 20px;
   font-size: 2rem;
-}
-
-.clip-icon::before {
-  @extend %icon;
-  content: '\f0c6';
 }
 
 .allow-right-icon::after {

@@ -15,7 +15,7 @@
     height: 14px;
   }
 
-  .tweet-icon {
+  .tweet-avatar {
     border-radius: 50%;
     width: 36px;
     height: 36px;
@@ -40,46 +40,13 @@
     color: #666;
   }
 
-  .tweet-like {
-    text-decoration: none;
-
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f004';
-      color: #d0d0d0;
-      font-size: 1.2rem;
-      margin: 0 14px 0 4px;
-    }
+  .tweet-icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #84929e;
   }
 
   .tweet-other {
-    width: 84%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 1.2rem;
-    color: #697882;
-    text-decoration: none;
-
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f007';
-      color: #d0d0d0;
-      font-size: 1.2rem;
-      margin-right: 14px;
-    }
-  }
-
-  .tweet-info {
-
-      &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f05a';
-      color: #999;
-      font-size: 1.2rem;
-    }
+    color: #84929e;
   }
 }

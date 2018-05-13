@@ -12,9 +12,11 @@
       position: absolute;
       top: 5px;
       left: 12px;
-      color: #fff;
-      @extend %icon;
+      font-family: "Font Awesome 5 Free";
       content: '\f0c6';
+      font-size: 2rem;
+      color: #fff;
+      font-weight: bold;
     }
   }
 
@@ -43,7 +45,7 @@
       }
     }
 
-    // todo:色を変更する汎用クラスを作って対応する
+    // todo:色を変更する汎用クラスを作って対応する　データ提供
     .detail-body-quote {
       color: #999;
     }
@@ -60,7 +62,6 @@
 
   .detail-balloon {
     position: relative;
-    display: flex;
     padding: 8px 8px;
     background-color: #fff;
     border-top: solid 1px $border-color;
@@ -95,13 +96,6 @@
       width: 44px;
       height: 44px;
       margin-right: 10px;
-    }
-
-    .detail-balloon-body {
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     .detail-balloon-body-head {
