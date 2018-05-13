@@ -1,53 +1,21 @@
 .header {
-  height: 48px;
   width: 100%;
-  background: $main-color;
+  height: 48px;
   background: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0, #ff6726), color-stop(100%, #fd4e28));
 
-  .header-icon-container {
-    display: block;
+  .header-icon {
+    text-align: center;
+    line-height: 48px;
     width: 48px;
     height: 48px;
-    line-height: 48px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .header-menu {
-
-    &::after {
-      @extend %icon;
-      content: '\f0c9';
-      color: #fff;
-    }
+    font-size: 2rem;
+    color: #fff;
   }
 
   .header-logo {
-    display: block;
     position: absolute;
     top: 10px;
     left: calc(50% - 30px);
-
-    img {
-      height: 24px;
-    }
-  }
-
-  .header-history {
-
-    &::after {
-      color: #fff;
-      @extend %icon;
-      content: '\f1da';
-    }
-  }
-
-  .header-search {
-
-    &::after {
-      color: #fff;
-      @extend %icon;
-      content: '\f002';
-    }
+    height: 24px;
   }
 }

@@ -1,0 +1,12 @@
+.l-footer-item-half {
+  display: flex;
+  box-sizing: border-box;
+
+  & > * {
+    width: 50%;
+  }
+
+  & > *:nth-child(odd) {
+    border-right: solid 1px #fff;
+  }
+}

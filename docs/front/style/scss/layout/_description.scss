@@ -3,4 +3,13 @@
   padding: 0 16px 36px;
   background-color: #fafafa;
   border-bottom: solid 1px #ebebeb;
+
+  & + .l-description-sns {
+    padding: 0 16px;
+    margin: -22px 0 32px;
+
+    & li {
+      z-index: 2;
+    }
+  }
 }

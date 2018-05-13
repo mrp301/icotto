@@ -1,6 +1,5 @@
-//snsボタン部分のみ
 .sns {
-  //ul > li > aタグを指定
+
   li > * {
     display: block;
     text-align: center;
@@ -9,7 +8,6 @@
     border-radius: 3px;
     text-decoration: none;
 
-    //各種snsアイコンの色を指定
     &.sns-pocket {
       background-color: #ff4157;
       box-shadow: 0 2px #cb3649;
@@ -38,8 +36,7 @@
     .sns-text {
       margin-top: 6px;
       line-height: .9;
-      font-size: 9px;
-      font-size: 0.9rem;
+      font-size: .9rem;
       color: #fff;
     }
   }

@@ -72,6 +72,19 @@ a {
   padding: 0 16px 36px;
   background-color: #fafafa;
   border-bottom: solid 1px #ebebeb; }
+  .l-description + .l-description-sns {
+    padding: 0 16px;
+    margin: -22px 0 32px; }
+    .l-description + .l-description-sns li {
+      z-index: 2; }
+
+.l-footer-item-half {
+  display: flex;
+  box-sizing: border-box; }
+  .l-footer-item-half > * {
+    width: 50%; }
+  .l-footer-item-half > *:nth-child(odd) {
+    border-right: solid 1px #fff; }
 
 .l-text {
   display: flex;
@@ -83,10 +96,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2; }
-  .l-header .l-header-menu {
-    position: absolute;
-    left: 0; }
+  z-index: 3; }
 
 .l-label {
   display: flex;
@@ -115,22 +125,17 @@ a {
 
 .l-sns {
   display: flex; }
-  .l-sns.l-sns-five li {
+  .l-sns.l-sns-fiveDivision li {
     width: 20%;
     margin-right: 2px; }
-  .l-sns.l-sns-four li {
+  .l-sns.l-sns-fourDivision li {
     width: 25%;
     margin-right: 6px; }
-  .l-sns.l-sns-three li {
+  .l-sns.l-sns-threeDivision li {
     width: 33.3%;
     margin-right: 6px; }
   .l-sns li:last-child {
     margin-right: 0; }
-  .l-sns.l-sns-description {
-    padding: 0 16px;
-    margin: -22px 0 32px; }
-    .l-sns.l-sns-description li {
-      z-index: 2; }
 
 .l-left {
   float: left; }
@@ -230,12 +235,6 @@ a {
   .btn-circle::before {
     color: #d0d0d0; }
 
-.description .description-text {
-  font-size: 1.3px;
-  font-size: 1.3rem;
-  color: #666;
-  letter-spacing: .05rem; }
-
 .detail {
   border: solid 1px #e5e5e5;
   border-radius: 2px;
@@ -323,86 +322,58 @@ a {
   .detail .detail-moon-icon::before {
     content: '\f186'; }
 
-.footer .footer-heading {
-  position: relative;
+.footer .footer-item {
   display: block;
   text-align: center;
-  padding: 16px 0;
-  font-size: 11px;
-  font-size: 1.1rem;
-  color: #666;
   text-decoration: none;
-  background-color: #f8f7f5; }
-  .footer .footer-heading::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -9px;
-    right: 50%;
-    -webkit-transform: translateX(18px);
-            transform: translateX(18px);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 18px 15px 18px;
-    border-color: transparent transparent #f8f7f5 transparent; }
-
-.footer .footer-nav-container {
-  display: flex;
-  flex-wrap: wrap; }
-  .footer .footer-nav-container .footer-nav, .footer .footer-nav-container .footer-nav-half {
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #e5e5e5;
-    border-bottom: solid 1px #fff;
-    text-align: center; }
-    .footer .footer-nav-container .footer-nav .footer-nav-text, .footer .footer-nav-container .footer-nav-half .footer-nav-text {
+  border-bottom: solid 1px #fff; }
+  .footer .footer-item.footer-item-pagetop {
+    position: relative;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    color: #666;
+    background-color: #f8f7f5; }
+    .footer .footer-item.footer-item-pagetop::before {
+      content: '';
       display: block;
-      padding: 19px 0;
-      font-size: 12px;
-      font-size: 1.2rem;
-      text-decoration: none; }
-  .footer .footer-nav-container .footer-nav-half {
-    width: 50%; }
-    .footer .footer-nav-container .footer-nav-half:nth-child(odd) {
-      border-right: solid 1px #fff; }
-
-.footer .footer-copyright {
-  padding: 18px 0;
-  font-size: 11px;
-  font-size: 1.1rem;
-  text-align: center;
-  color: #999;
-  background-color: #ebebeb; }
+      position: absolute;
+      top: -9px;
+      right: 50%;
+      -webkit-transform: translateX(18px);
+              transform: translateX(18px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 18px 15px 18px;
+      border-color: transparent transparent #f8f7f5 transparent; }
+  .footer .footer-item.footer-item-nav {
+    padding: 19px 0;
+    font-size: 1.2rem;
+    color: #666;
+    background-color: #e5e5e5; }
+  .footer .footer-item.footer-item-copyright {
+    padding: 18px 0;
+    font-size: 1.1rem;
+    color: #999;
+    background-color: #ebebeb;
+    border: none; }
 
 .header {
-  height: 48px;
   width: 100%;
-  background: #ff6726;
+  height: 48px;
   background: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0, #ff6726), color-stop(100%, #fd4e28)); }
-  .header .header-icon-container {
-    display: block;
+  .header .header-icon {
+    text-align: center;
+    line-height: 48px;
     width: 48px;
     height: 48px;
-    line-height: 48px;
-    text-align: center;
-    text-decoration: none; }
-  .header .header-menu::after {
-    content: '\f0c9';
+    font-size: 2rem;
     color: #fff; }
   .header .header-logo {
-    display: block;
     position: absolute;
     top: 10px;
-    left: calc(50% - 30px); }
-    .header .header-logo img {
-      height: 24px; }
-  .header .header-history::after {
-    color: #fff;
-    content: '\f1da'; }
-  .header .header-search::after {
-    color: #fff;
-    content: '\f002'; }
+    left: calc(50% - 30px);
+    height: 24px; }
 
 .heading-secondary {
   font-size: 1.8rem;
@@ -482,7 +453,7 @@ a {
   .icon-text-container .icon-text {
     margin-left: 28px; }
 
-.detail .detail-header::after, .detail .detail-icon::before, .header .header-menu::after, .header .header-history::after, .header .header-search::after, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .monthly-ranking::after, .share::after {
+.detail .detail-header::after, .detail .detail-icon::before, .heading-detail:before, .clip-icon::before, .allow-right-icon::after, .monthly-ranking::after, .share::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 20px;
@@ -737,8 +708,7 @@ a {
   .sns li > * .sns-text {
     margin-top: 6px;
     line-height: .9;
-    font-size: 9px;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: #fff; }
 
 .text-xlarge {
@@ -769,11 +739,10 @@ a {
   .text-cite .text-citeIcon {
     height: 18px; }
 
-.description-text {
-  font-size: 1.3px;
+.text-description {
   font-size: 1.3rem;
-  color: #666;
-  letter-spacing: .05rem; }
+  letter-spacing: .05rem;
+  color: #666; }
 
 .tweet {
   position: relative;

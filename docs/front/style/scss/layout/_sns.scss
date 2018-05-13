@@ -1,21 +1,21 @@
 .l-sns {
   display: flex;
 
-  &.l-sns-five {
+  &.l-sns-fiveDivision {
     li {
       width: 20%;
       margin-right: 2px;
     }
   }
 
-  &.l-sns-four {
+  &.l-sns-fourDivision {
     li {
       width: 25%;
       margin-right: 6px;
     }
   }
 
-  &.l-sns-three {
+  &.l-sns-threeDivision {
     li {
       width: 33.3%;
       margin-right: 6px;
@@ -24,14 +24,5 @@
 
   li:last-child {
     margin-right: 0;
-  }
-
-  &.l-sns-description {
-    padding: 0 16px;
-    margin: -22px 0 32px;
-
-    & li {
-      z-index: 2;
-    }
   }
 }
