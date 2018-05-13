@@ -104,7 +104,7 @@
 - tweet修正
 - sectionContainer修正
 - paganation修正
-- <wip>detail修正中
+- [wip]detail修正中
 - BEMについて調べる
 - OOCSSについて調べる
    
@@ -123,7 +123,7 @@
   
 ------------------------------------------------------------------------------------  
   
-###残りタスク（綺麗にするmodule、layout）
+### 残りタスク（綺麗にするmodule、layout）
 - detail
 - heading
 - icon-text
