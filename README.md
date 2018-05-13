@@ -124,10 +124,7 @@
 ------------------------------------------------------------------------------------  
   
 ### 残りタスク（綺麗にするmodule、layout）
-- detail
-- heading
-- icon-text
-- icon
-- monthly-ranking
-- share
-- writer
+- detail moduleの精査
+- heading moduleの精査
+- writer moduleをlayoutと切り分ける
+- iconとtext周りの共通化
