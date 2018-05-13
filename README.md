@@ -117,7 +117,7 @@
 - 構造：width,height,border,padding,margin
 - 見た目：color,border-color,background-colorなど
 - インライン要素のインデントには気をつける。
-  - <p><span><span/><spam></span></p>これをブロック要素のようにインデントすると1つ目のspanの後に空白が挿入される。
+ - <p><span><span/><spam></span></p>これをブロック要素のようにインデントすると1つ目のspanの後に空白が挿入される。
 - hoge > * ：子要素を全て選択
 - htmlの構造に左右されないのがmoduleと考えることでlayoutとmoduleの切り方の感覚を休み前よりは掴めた（気がする）
   
