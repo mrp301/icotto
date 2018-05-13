@@ -4,20 +4,16 @@
   text-decoration: none;
   color: $main-text !important;
 
-  .media-thumbnail-container {
-    height: 96px;
-
    .media-thumbnail {
      width: 96px;
      height: 96px;
    }
-  }
 
   .media-body {
     padding: 8px 8px 0 12px;
     width: 100%;
 
-    .media-title {
+    .media-body-title {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px;

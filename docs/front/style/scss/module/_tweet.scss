@@ -7,40 +7,30 @@
   &::after {
     content: '';
     position: absolute;
-    display: block;
     background-image: url(../../../img/social/twitter.png);
     background-size: contain;
     top: 16px;
     right: 16px;
     width: 14px;
     height: 14px;
-
   }
 
-  .tweet-user {
-    display: flex;
-    margin-bottom: 8px;
-
-    .tweet-user-icon {
-      margin-right: 10px;
-
-      .tweet-user-icon-img {
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-      }
-    }
+  .tweet-icon {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
   }
 
-  .tweet-user-profile {
+  .tweet-profile {
     line-height: 1;
 
-    .tweet-user-profile-name {
+    .tweet-profile-name {
+      font-size: 1.4rem;
       font-weight: bold;
     }
 
-    .tweet-user-profile-id {
-      font-size: 12px;
+    .tweet-profile-id {
+      font-size: 1.2rem;
       color: #999;
     }
   }
@@ -48,7 +38,6 @@
   .tweet-date {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 8px;
   }
 
   .tweet-like {

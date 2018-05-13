@@ -4,15 +4,14 @@
   display: inline-block;
   padding: 10px 7px;
   text-decoration: none;
-  font-size: 12px;
   font-size: 1.2rem;
   color: #666;
   border: solid 1px #ebebeb;
   border-radius: 2px;
-  box-shadow: 0 1px #ebebeb;
 
-    //地図アイコン
-    &.label-pin {
+    &.label-area {
+      background-color: #fff;
+      box-shadow: 0 1px #ebebeb;
 
       &::before {
         font-family: "Font Awesome 5 Free";
@@ -22,10 +21,18 @@
         font-size: 1.2rem;
         margin-right: 6px;
       }
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        content: '\f0da';
+        color: #d0d0d0;
+        font-size: 1.2rem;
+        margin-left: 6px;
+      }
     }
 
-    //タグアイコン
-    &.label-tag {
+    &.label-keyword {
       background-color: #ebebeb;
       box-shadow: 0 2px #d2d2d2;
 
@@ -37,16 +44,15 @@
         font-size: 1.2rem;
         margin-right: 6px;
       }
-    }
 
-    //矢印アイコン（共通）
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: bold;
-      content: '\f0da';
-      color: #d0d0d0;
-      font-size: 1.2rem;
-      margin-left: 6px;
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        content: '\f0da';
+        color: #d0d0d0;
+        font-size: 1.2rem;
+        margin-left: 6px;
+      }
     }
   }
 }

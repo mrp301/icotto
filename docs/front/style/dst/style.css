@@ -92,6 +92,14 @@ a {
   .l-text.l-text-right {
     justify-content: flex-end; }
 
+.l-tweet {
+  margin-bottom: 8px; }
+  .l-tweet .l-tweet-icon {
+    line-height: 0;
+    margin-right: 10px; }
+  .l-tweet .l-tweet-body {
+    margin-bottom: 7.35px; }
+
 .l-header {
   position: fixed;
   top: 0;
@@ -122,6 +130,10 @@ a {
     left: 0;
     width: 100%;
     background: linear-gradient(180deg, transparent 0, rgba(41, 20, 5, 0.7)); }
+  .l-mainVisual .l-mainVisual-btn {
+    position: absolute;
+    right: 16px;
+    bottom: -32px; }
 
 .l-sns {
   display: flex; }
@@ -219,21 +231,6 @@ a {
   .btn.btn-login {
     background-color: #ff6726;
     color: #fff; }
-
-.btn-circle {
-  position: absolute;
-  right: 16px;
-  bottom: -32px;
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  text-align: center;
-  line-height: 64px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15); }
-  .btn-circle::before {
-    color: #d0d0d0; }
 
 .detail {
   border: solid 1px #e5e5e5;
@@ -514,65 +511,81 @@ a {
   display: inline-block;
   padding: 10px 7px;
   text-decoration: none;
-  font-size: 12px;
   font-size: 1.2rem;
   color: #666;
   border: solid 1px #ebebeb;
-  border-radius: 2px;
-  box-shadow: 0 1px #ebebeb; }
-  .label li > *.label-pin::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    content: '\f3c5';
-    color: #d0d0d0;
-    font-size: 1.2rem;
-    margin-right: 6px; }
-  .label li > *.label-tag {
+  border-radius: 2px; }
+  .label li > *.label-area {
+    background-color: #fff;
+    box-shadow: 0 1px #ebebeb; }
+    .label li > *.label-area::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f3c5';
+      color: #d0d0d0;
+      font-size: 1.2rem;
+      margin-right: 6px; }
+    .label li > *.label-area::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f0da';
+      color: #d0d0d0;
+      font-size: 1.2rem;
+      margin-left: 6px; }
+  .label li > *.label-keyword {
     background-color: #ebebeb;
     box-shadow: 0 2px #d2d2d2; }
-    .label li > *.label-tag::before {
+    .label li > *.label-keyword::before {
       font-family: "Font Awesome 5 Free";
       font-weight: bold;
       content: '\f02b';
       color: #d0d0d0;
       font-size: 1.2rem;
       margin-right: 6px; }
-  .label li > *::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    content: '\f0da';
-    color: #d0d0d0;
-    font-size: 1.2rem;
-    margin-left: 6px; }
+    .label li > *.label-keyword::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f0da';
+      color: #d0d0d0;
+      font-size: 1.2rem;
+      margin-left: 6px; }
 
 .mainVisual {
   padding: 16px 12px 4px; }
   .mainVisual .mainVisual-title {
     color: #fff;
-    font-size: 18px;
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: .1rem;
-    text-shadow: 0px 0px 3px #666; }
+    text-shadow: 0 0 3px #666; }
   .mainVisual .mainVisual-date {
     color: #ccc;
     font-size: 10px;
     font-size: 1rem; }
+  .mainVisual .mainVisual-btn {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
+    .mainVisual .mainVisual-btn .mainVisual-btn-clip {
+      font-size: 2rem;
+      color: #d0d0d0; }
 
 .media {
   display: flex;
   border-bottom: solid 1px #f8f7f5;
   text-decoration: none;
   color: #333 !important; }
-  .media .media-thumbnail-container {
+  .media .media-thumbnail {
+    width: 96px;
     height: 96px; }
-    .media .media-thumbnail-container .media-thumbnail {
-      width: 96px;
-      height: 96px; }
   .media .media-body {
     padding: 8px 8px 0 12px;
     width: 100%; }
-    .media .media-body .media-title {
+    .media .media-body .media-body-title {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 21px; }
@@ -752,33 +765,27 @@ a {
   .tweet::after {
     content: '';
     position: absolute;
-    display: block;
     background-image: url(../../../img/social/twitter.png);
     background-size: contain;
     top: 16px;
     right: 16px;
     width: 14px;
     height: 14px; }
-  .tweet .tweet-user {
-    display: flex;
-    margin-bottom: 8px; }
-    .tweet .tweet-user .tweet-user-icon {
-      margin-right: 10px; }
-      .tweet .tweet-user .tweet-user-icon .tweet-user-icon-img {
-        border-radius: 50%;
-        width: 36px;
-        height: 36px; }
-  .tweet .tweet-user-profile {
+  .tweet .tweet-icon {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px; }
+  .tweet .tweet-profile {
     line-height: 1; }
-    .tweet .tweet-user-profile .tweet-user-profile-name {
+    .tweet .tweet-profile .tweet-profile-name {
+      font-size: 1.4rem;
       font-weight: bold; }
-    .tweet .tweet-user-profile .tweet-user-profile-id {
-      font-size: 12px;
+    .tweet .tweet-profile .tweet-profile-id {
+      font-size: 1.2rem;
       color: #999; }
   .tweet .tweet-date {
     font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 8px; }
+    color: #666; }
   .tweet .tweet-like {
     text-decoration: none; }
     .tweet .tweet-like::before {

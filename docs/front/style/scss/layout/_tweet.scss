@@ -1,0 +1,13 @@
+.l-tweet {
+  margin-bottom: 8px;
+
+  .l-tweet-icon {
+    //todo:.contentsについとるline-heightが原因。あとで治す。
+    line-height: 0;
+    margin-right: 10px;
+  }
+
+  .l-tweet-body {
+    margin-bottom: 7.35px;
+  }
+}
