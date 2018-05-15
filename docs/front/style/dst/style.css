@@ -221,7 +221,8 @@ a {
 
 .anchorBlock {
   display: block;
-  padding: 8px; }
+  padding: 8px;
+  color: #666; }
 
 .balloon {
   position: relative;
@@ -792,20 +793,13 @@ a {
   .tweet .tweet-other {
     color: #84929e; }
 
-.writer-container {
+.writer {
   background-color: #fafafa;
   padding: 8px 12px; }
-  .writer-container .writer {
-    display: table; }
-    .writer-container .writer .writer-icon {
-      display: table-cell;
-      width: 24px;
-      height: 24px;
-      margin-right: 8px;
-      border-radius: 50%; }
-    .writer-container .writer .writer-name {
-      display: table-cell;
-      vertical-align: middle;
-      color: #666;
-      font-size: 11px;
-      font-size: 1.1rem; }
+  .writer .writer-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; }
+  .writer .writer-name {
+    color: #666;
+    font-size: 1.1rem; }
