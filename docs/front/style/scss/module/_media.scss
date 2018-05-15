@@ -1,22 +1,54 @@
 .media {
   display: flex;
-  border-bottom: solid 1px #f8f7f5;
   text-decoration: none;
-  color: $main-text !important;
 
-   .media-thumbnail {
-     width: 96px;
-     height: 96px;
-   }
+  &.media-aside {
+    border-bottom: solid 1px #f8f7f5;
 
-  .media-body {
-    padding: 8px 8px 0 12px;
+    .media-thumbnail {
+      width: 96px;
+      height: 96px;
+    }
+
+    .media-body {
+      padding: 8px 8px 0 12px;
+      width: 100%;
+      line-height: 21px;
+
+      .media-body-title {
+        color: $main-text !important;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &.media-article {
     width: 100%;
 
-    .media-body-title {
-      font-size: 1.4rem;
-      font-weight: bold;
-      line-height: 21px;
+    .media-thumbnail {
+      width: 44px;
+      height: 44px;
+    }
+
+    //省略文字がうまく動かない。
+    .media-body {
+      overflow: hidden;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
+      padding: 0 8px;
+      width: 100%;
+      font-size: 1.3rem;
+
+      .media-body-title {
+        color: $main-text !important;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .media-body-anchor {
+        white-space: nowrap;
+      }
     }
   }
 }

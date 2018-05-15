@@ -1,0 +1,32 @@
+.balloon {
+  position: relative;
+  padding: 8px 8px;
+  background-color: #fff;
+  border-top: solid 1px $border-color;
+
+  &:before {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: transparent transparent $border-color;
+  }
+
+  &:after {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: transparent transparent #fff;
+  }
+}

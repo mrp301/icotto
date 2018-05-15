@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   & > * {
-    width: 50%;
+    flex-grow: 1;
   }
 
   & > *:nth-child(odd) {

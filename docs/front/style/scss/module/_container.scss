@@ -1,0 +1,20 @@
+//要素を囲う使い方をしています。（ページ内全体で）
+.container-large {
+  padding: 0 16px;
+}
+
+.container-medium {
+  padding: 0 12px;
+}
+
+.container-small {
+  padding: 0 8px;
+}
+
+.container-borderBottom-dotted {
+  border-bottom: dotted 1px $border-color;
+}
+
+.container-borderBottom-solid {
+  border-bottom: solid 1px $border-color;
+}

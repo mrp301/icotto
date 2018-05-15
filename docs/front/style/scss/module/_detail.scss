@@ -30,111 +30,13 @@
       font-weight: bold;
     }
 
-    // todo:定義リストmoduleで切り分ける
-    dl {
-
-      dt {
-        float: left;
-        clear: both;
-        width: 56px;
-        color: #999;
-      }
-
-      dd {
-        margin-bottom: 4px;
-      }
-    }
-
-    // todo:色を変更する汎用クラスを作って対応する　データ提供
     .detail-body-quote {
       color: #999;
     }
   }
 
-  .l-sideBySide {
-
-    dd {
-      display: inline-block;
-      margin-right: 14px;
-    }
-  }
-  // todo:定義リストmoduleで切り分ける
-
-  .detail-balloon {
-    position: relative;
-    padding: 8px 8px;
-    background-color: #fff;
-    border-top: solid 1px $border-color;
-
-    &:before {
-      position: absolute;
-      top: -11px;
-      left: 20px;
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: transparent transparent $border-color;
-    }
-
-    &:after {
-      position: absolute;
-      top: -9px;
-      left: 20px;
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: transparent transparent #fff;
-    }
-
-    .detail-balloon-img {
-      width: 44px;
-      height: 44px;
-      margin-right: 10px;
-    }
-
-    .detail-balloon-body-head {
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-
-    .detail-balloon-anchor {
-      font-size: 1.3rem;
-      font-size: 13px;
-    }
-  }
-
   .detail-icon {
-
-    &::before {
-      color: #999;
-      @extend %icon;
-      margin-right: 5px;
-      font-size: 1.1rem !important;
-    }
-  }
-
-  .detail-pin-icon {
-
-    &::before {
-      content: '\f3c5';
-    }
-  }
-
-  .detail-sun-icon {
-    &::before {
-      content: '\f185';
-    }
-  }
-
-  .detail-moon-icon {
-    &::before {
-      content: '\f186';
-    }
+    color: #999;
+    font-size: 1.1rem
   }
 }
