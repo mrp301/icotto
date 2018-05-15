@@ -3,10 +3,9 @@
 @import './base/_base';
 
 //layout
-@import './layout/_definitionList.scss';
+@import './layout/_detail';
 @import './layout/_description';
 @import './layout/_footer';
-@import './layout/_text';
 @import './layout/_tweet';
 @import './layout/_header';
 @import './layout/_icon';
@@ -19,8 +18,8 @@
 //module
 @import './module/_anchorBlock';
 @import './module/_balloon';
+@import './module/_border';
 @import './module/_btn';
-@import './module/_definitionList';
 @import './module/_detail';
 @import './module/_footer';
 @import './module/_header';
