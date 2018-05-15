@@ -131,6 +131,7 @@
 - detail修正
   - さらなるmoduleの切り出し
 - anchorの部分の修正
+- writerの修正
   
 ## 時間
 - 4時間
