@@ -40,10 +40,15 @@
       color: #fff;
     }
   }
+}
 
-  & + .sns-extra-text {
+.sns-extra-text {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666;
+
+  &.sns-extra-text-share {
     position: relative;
-    color: #666;
 
     &::after {
       position: absolute;

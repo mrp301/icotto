@@ -685,45 +685,42 @@ i {
     font-size: .9rem;
     color: #fff; }
 
-.sns + .sns-extra-text {
-  position: relative;
+.sns-extra-text {
+  text-align: center;
+  font-size: 1.4rem;
   color: #666; }
-  .sns + .sns-extra-text::after {
-    position: absolute;
-    top: -8px;
-    right: 33px;
-    display: block;
-    opacity: .5;
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    content: '\f004';
-    font-size: 26px;
-    color: #ffc2a8;
-    -webkit-transform: rotate(12deg);
-            transform: rotate(12deg); }
+  .sns-extra-text.sns-extra-text-share {
+    position: relative; }
+    .sns-extra-text.sns-extra-text-share::after {
+      position: absolute;
+      top: -8px;
+      right: 33px;
+      display: block;
+      opacity: .5;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f004';
+      font-size: 26px;
+      color: #ffc2a8;
+      -webkit-transform: rotate(12deg);
+              transform: rotate(12deg); }
 
 .text-xlarge {
-  font-size: 18px;
   font-size: 1.8rem; }
 
 .text-large {
-  font-size: 16px;
   font-size: 1.6rem; }
 
 .text-medium {
-  font-size: 1.4rem;
-  font-size: 14px; }
+  font-size: 1.4rem; }
 
 .text-small {
-  font-size: 12px;
   font-size: 1.2rem; }
 
 .text-xsmall {
-  font-size: 10px;
   font-size: 1rem; }
 
 .text-cite {
-  font-size: 11px;
   font-size: 1.1rem; }
   .text-cite .text-cite-head {
     color: #666; }
