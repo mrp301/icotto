@@ -20,7 +20,7 @@
 
     &.sns-facebook {
       background-color: #3b5998;
-      box-shadow: 0 2px #324c81;
+      box-shadow: 0 2px #304776;
     }
 
     &.sns-hatenabookmark {
@@ -38,6 +38,28 @@
       line-height: .9;
       font-size: .9rem;
       color: #fff;
+    }
+  }
+
+  & + .sns-text {
+    position: relative;
+    color: #666;
+
+    &.sns-text-share {
+
+      &::after {
+        position: absolute;
+        top: -8px;
+        right: 33px;
+        display: block;
+        opacity: .5;
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        content: '\f004';
+        font-size: 26px;
+        color: #ffc2a8;
+        transform: rotate(12deg);
+      }
     }
   }
 }

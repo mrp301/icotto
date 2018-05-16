@@ -51,11 +51,15 @@
 }
 
 .l-flex {
-  display: flex;
+  display: flex !important;
 
   &.l-flex-item-center {
     align-items: center;
   }
+}
+
+.l-vertical-center {
+  vertical-align: middle;
 }
 
 .full {

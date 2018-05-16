@@ -29,25 +29,18 @@
     .media-thumbnail {
       width: 44px;
       height: 44px;
+      border-radius: 2px;
     }
 
-    //省略文字がうまく動かない。
     .media-body {
-      overflow: hidden;
-      // text-overflow: ellipsis;
-      // white-space: nowrap;
       padding: 0 8px;
-      width: 100%;
+      width: calc(100% - 44px);
       font-size: 1.3rem;
 
       .media-body-title {
         color: $main-text !important;
         font-weight: bold;
         font-size: 1.1rem;
-      }
-
-      .media-body-anchor {
-        white-space: nowrap;
       }
     }
   }

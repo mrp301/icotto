@@ -8,6 +8,7 @@
 
   .l-tweet-body {
     margin-bottom: 7.35px;
+    line-height: 19px;
   }
 
   .l-tweet-icon {
@@ -16,8 +17,5 @@
 
   .l-tweet-other {
     padding: 0 5px 0 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }

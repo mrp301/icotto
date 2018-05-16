@@ -50,3 +50,9 @@
 .text-anchor-underline {
   text-decoration: underline !important;
 }
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
