@@ -41,25 +41,22 @@
     }
   }
 
-  & + .sns-text {
+  & + .sns-extra-text {
     position: relative;
     color: #666;
 
-    &.sns-text-share {
-
-      &::after {
-        position: absolute;
-        top: -8px;
-        right: 33px;
-        display: block;
-        opacity: .5;
-        font-family: "Font Awesome 5 Free";
-        font-weight: bold;
-        content: '\f004';
-        font-size: 26px;
-        color: #ffc2a8;
-        transform: rotate(12deg);
-      }
+    &::after {
+      position: absolute;
+      top: -8px;
+      right: 33px;
+      display: block;
+      opacity: .5;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f004';
+      font-size: 26px;
+      color: #ffc2a8;
+      transform: rotate(12deg);
     }
   }
 }

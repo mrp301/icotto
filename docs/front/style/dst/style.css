@@ -685,10 +685,10 @@ i {
     font-size: .9rem;
     color: #fff; }
 
-.sns + .sns-text {
+.sns + .sns-extra-text {
   position: relative;
   color: #666; }
-  .sns + .sns-text.sns-text-share::after {
+  .sns + .sns-extra-text::after {
     position: absolute;
     top: -8px;
     right: 33px;
