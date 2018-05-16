@@ -67,6 +67,15 @@ a {
   a:visited {
     color: #666; }
 
+.l-container-large {
+  padding: 0 16px; }
+
+.l-container-medium {
+  padding: 0 12px; }
+
+.l-container-small {
+  padding: 0 8px; }
+
 .l-detail-listItem-inline {
   display: inline-block;
   margin-right: 14px; }
@@ -212,10 +221,6 @@ a {
 
 .full {
   width: 100% !important; }
-
-.anchorBlock {
-  padding: 8px;
-  color: #666; }
 
 .balloon {
   position: relative;
@@ -657,15 +662,6 @@ a {
     background-color: #e84e65;
     border-radius: 0 0 2px 2px; }
 
-.container-large {
-  padding: 0 16px; }
-
-.container-medium {
-  padding: 0 12px; }
-
-.container-small {
-  padding: 0 8px; }
-
 .share {
   position: relative;
   color: #666; }
@@ -747,6 +743,10 @@ a {
 
 .text-anchor-underline {
   text-decoration: underline !important; }
+
+.textBlock {
+  display: block;
+  padding: 8px; }
 
 .tweet {
   position: relative;
