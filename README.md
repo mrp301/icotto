@@ -199,15 +199,22 @@
 # 5/17日 金  
 
 ## やったこと  
+- IOS androidのフォント仕様について調査
+- 新しい模写サイト探す
 
+## 時間
+- 1時間
+  
 ### 学んだこと・気づいたこと・疑問に思ったこと
 - ios6以降は日本フォントのデフォルトが明朝体になっているのでゴシック体を使いたい場合、sans-serifの指定が必須。
 - スマホの最小フォントサイズは8px。12px以下は使わないのが無難
 - androidデバイスで使える共通フォント「Doroid sans」「Roboto」の２つ
 - androidの日本語フォントはデバイスごとにバラバラ。表示できる日本語フォントは1フォントのみ
 - androidの標準ブラウザはfont-family意味無し
+- Arialはwin mac両方に入ってる。
 
 - 便利な一覧：https://mw-s.jp/2017css-font-win-mac/
-- （便利な参考：https://saruwakakun.com/font-family）
+- 便利な参考：https://saruwakakun.com/font-family）
+- メモ：http://kojika17.com/2012/02/naming.html
 
 
