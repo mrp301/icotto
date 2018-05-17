@@ -192,3 +192,4 @@
 - %とviewportの違いは%は親要素から相対的に計算されるのに対して、viewportは画面の幅から相対的に計算される
 - 計算式は xxpx/画面サイズ = xxx(%)
 - 欠点はソースを見たときに分かりにくい
+- （便利なツール：https://codepen.io/netsi1964/full/NyzmeQ）
