@@ -138,8 +138,9 @@ i {
   position: relative;
   padding: 16px 12px;
   max-width: 100%;
-  height: 208px;
-  background-image: url(../../../img/main-image.jpg);
+  height: 37.5vw;
+  max-height: 300px;
+  background-image: url(../../../img/l-mainVisual2.jpg);
   background-size: cover;
   background-position: center;
   　background-repeat: no-repeat;
@@ -287,7 +288,7 @@ i {
       color: #d0d0d0; }
   .btn.btn-arrow {
     position: relative;
-    background-color: #ff6726;
+    background-color: #24292e;
     color: #fff; }
     .btn.btn-arrow::after {
       position: absolute;
@@ -310,16 +311,7 @@ i {
   .detail .detail-header {
     position: relative;
     background-color: #ebebeb;
-    height: 40px; }
-    .detail .detail-header::after {
-      position: absolute;
-      top: 5px;
-      left: 12px;
-      font-family: "Font Awesome 5 Free";
-      content: '\f0c6';
-      font-size: 2rem;
-      color: #fff;
-      font-weight: bold; }
+    height: 30px; }
   .detail .detail-body {
     padding: 8px 8px 12px;
     font-size: 1.1rem; }
@@ -380,7 +372,7 @@ i {
 .header {
   width: 100%;
   height: 48px;
-  background: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0, #ff6726), color-stop(100%, #fd4e28)); }
+  background: #24292e; }
   .header .header-icon {
     text-align: center;
     line-height: 48px;
@@ -391,7 +383,7 @@ i {
   .header .header-logo {
     position: absolute;
     top: 10px;
-    left: calc(50% - 30px);
+    left: calc(50% - 72.92px);
     height: 24px; }
 
 .heading-article-title {
@@ -436,11 +428,10 @@ i {
     text-align: center;
     width: 24px;
     height: 29px;
-    color: #ffb415;
+    color: #666;
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
-    content: '\f2e7';
-    border-bottom: solid 1px #ffb415; }
+    content: '\f1ad'; }
 
 .icotto-line {
   position: relative;
